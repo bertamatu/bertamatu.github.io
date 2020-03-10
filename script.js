@@ -1,9 +1,8 @@
 /* ---- particles.js config ---- */
-
 particlesJS("particles-js", {
   "particles": {
     "number": {
-      "value": 10,
+      "value": 20,
       "density": {
         "enable": true,
         "value_area": 500
@@ -16,10 +15,10 @@ particlesJS("particles-js", {
       "type": "circle",
       "stroke": {
         "width": 0,
-        "color": "#000000"
+        "color": "#ffffff"
       },
       "polygon": {
-        "nb_sides": 3
+        "nb_sides": 5
       },
       "image": {
         "src": "img/github.svg",
@@ -109,22 +108,5 @@ particlesJS("particles-js", {
     }
 
   },
-
   "retina_detect": true
 });
-
-
-// particlesJS('particles-js', {
-//   "particles": {
-//     "nb": 40
-//   },
-//   "interactivity": {
-//     "events": {
-//       "onresize": {
-//         "enable": true,
-//         "density_auto": true,
-//         "density_area": 400 
-//       }
-//     }
-//   }
-// });
