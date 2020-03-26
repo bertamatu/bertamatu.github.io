@@ -44,32 +44,38 @@
   position: relative;
   top: 40vh;
   font-size: 0.9rem;
-  background-color: rgba(29, 198, 216, 0.16);
+  background-color: rgba(33, 219, 240, 0.16);
 }
 
 #home .font_icons .fas, #home .font_icons .fab {
   padding: 0.3rem;
 }
 
-#home .intro_text {
+#home .font_icons .intro_text {
   padding: 0.4rem;
   text-align: center;
 }
 
-#home .intro_text .intro_text_name {
+#home .font_icons .intro_text .intro_text_name {
   font-size: 1.1rem;
   font-weight: 600;
   color: white;
 }
 
-#home .intro_text .intro_text_tech {
+#home .font_icons .intro_text .intro_text_tech {
   font-size: 1.3rem;
   font-weight: 600;
   color: white;
 }
 
-#home hr {
+#home .font_icons hr {
   background-color: white;
+}
+
+#home .font_icons .intro_text_responsive {
+  padding: 7rem;
+  color: white;
+  font-weight: 200;
 }
 
 #about {
@@ -80,6 +86,8 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
+  -webkit-box-shadow: 0px 0px 52px 23px rgba(0, 0, 0, 0.67);
+  box-shadow: 0px 0px 52px 23px rgba(0, 0, 0, 0.67);
 }
 
 #about .about_me_text {
@@ -102,6 +110,8 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
+  -webkit-box-shadow: 0px 0px 52px 52px rgba(0, 0, 0, 0.67);
+  box-shadow: 0px 0px 52px 52px rgba(0, 0, 0, 0.67);
 }
 
 #projects .projects_list {
@@ -115,16 +125,22 @@
 }
 
 #projects .projects_list div {
-  background-color: black;
-  height: 10vh;
-  width: 20vw;
+  background-color: rgba(160, 247, 224, 0.39);
+  height: auto;
+  width: auto;
   margin: 0 auto;
   margin-top: 10vh;
+  font-size: 0.8rem;
+  padding: 2rem;
+  -webkit-box-shadow: 0px 0px 40px 1px rgba(0, 0, 0, 0.67);
+  box-shadow: 0px 0px 40px 1px rgba(0, 0, 0, 0.67);
 }
 
 #contacts {
   height: 100vh;
   width: 100vw;
+  -webkit-box-shadow: 0px 0px 52px 52px rgba(0, 0, 0, 0.67);
+  box-shadow: 0px 0px 52px 52px rgba(0, 0, 0, 0.67);
 }
 
 #contacts #gmap_canvas {

@@ -1,5 +1,12 @@
 #contacts  {
     @include elementsHeightWidth (100vh, 100vw);
+
+    -webkit-box-shadow: 0px 0px 52px 52px rgba(0,0,0,0.67);
+    -moz-box-shadow: 0px 0px 52px 52px rgba(0,0,0,0.67);
+    box-shadow: 0px 0px 52px 52px rgba(0,0,0,0.67);
+
+
+
     #gmap_canvas {
         margin: 0;
         border: none;

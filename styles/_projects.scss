@@ -1,14 +1,27 @@
 #projects {
     @include bckgFullScreen (url(/imgs/gray-txt-3.jpg));
+    -webkit-box-shadow: 0px 0px 52px 52px rgba(0,0,0,0.67);
+-moz-box-shadow: 0px 0px 52px 52px rgba(0,0,0,0.67);
+box-shadow: 0px 0px 52px 52px rgba(0,0,0,0.67);
+
+
     .projects_list{
         display: flex;
         flex-direction: column;
         div {
-            background-color: rgba($color: #000000, $alpha: 1.0);
-            height: 10vh;
-            width: 20vw;
+            background-color: rgba(160, 247, 224, 0.39);
+            height: auto;
+            width: auto;
             margin: 0 auto;
             margin-top: 10vh;
+            font-size: 0.8rem;
+            padding: 2rem;
+
+
+
+            -webkit-box-shadow: 0px 0px 40px 1px rgba(0,0,0,0.67);
+            -moz-box-shadow: 0px 0px 40px 1px rgba(0,0,0,0.67);
+            box-shadow: 0px 0px 40px 1px rgba(0,0,0,0.67);
         }
 
     }
