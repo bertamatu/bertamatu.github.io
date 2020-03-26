@@ -1,0 +1,144 @@
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#7db9e8+0,207cca+42,2989d8+61,1e5799+100 */
+#home {
+  height: 100vh;
+  width: 100vw;
+}
+
+#home .navbar .navbar-brand, #home .navbar .navbar-toggler {
+  color: rgba(255, 0, 85, 0.6);
+}
+
+#home .navbar a {
+  color: rgba(255, 0, 85, 0.6);
+  font-size: 0.7rem;
+}
+
+#home .navbar .dropdown-menu {
+  background-color: rgba(255, 255, 255, 0.4) !important;
+  border: none;
+  width: auto !important;
+}
+
+#home .navbar .dropdown-menu a {
+  color: rgba(116, 68, 68, 0.6) !important;
+}
+
+#home .font_icons {
+  color: rgba(218, 64, 64, 0.5);
+  -webkit-box-shadow: 0px 0px 57px 2px rgba(0, 0, 0, 0.57);
+  box-shadow: 0px 0px 57px 2px rgba(0, 0, 0, 0.57);
+  text-align: center;
+  position: relative;
+  top: 40vh;
+  padding-bottom: 5vh;
+  font-size: 11px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+#home .font_icons .fas, #home .font_icons .fab {
+  padding: 0.3rem;
+}
+
+#home .intro_text {
+  padding: 0.4rem;
+  text-align: center;
+}
+
+#home .intro_text .intro_text_name {
+  font-size: 1rem;
+  font-weight: 100;
+}
+
+#home .intro_text .intro_text_tech {
+  font-size: 1rem;
+  font-weight: 100;
+}
+
+#video_wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -999;
+}
+
+#bckgVideo {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.fa-pause-circle {
+  position: relative;
+  top: 70vh;
+  color: rgba(136, 198, 215, 0.4);
+  background: none;
+  border: none;
+  outline: none;
+  padding-left: 10vw;
+}
+
+#about {
+  background-image: url(/imgs/about.jpeg);
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+#about .about_me_text {
+  -webkit-box-shadow: 0px 0px 57px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 57px 2px rgba(0, 0, 0, 0.3);
+  text-align: justify;
+  position: relative;
+  top: 20vh;
+  font-size: 0.8rem;
+  background-color: rgba(39, 202, 247, 0.1);
+  padding: 2rem;
+}
+
+#projects {
+  background-image: url(/imgs/projects.jpeg);
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+#contacts {
+  height: 100vh;
+  width: 100vw;
+}
+
+#contacts #gmap_canvas {
+  margin: 0;
+  border: none;
+  outline: none;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  opacity: 0.9;
+  height: 100vh;
+  width: 100vw;
+}
+
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  max-width: 100%;
+}
+
+body {
+  color: rgba(255, 255, 255, 0.9);
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+}
+/*# sourceMappingURL=styles.css.map */

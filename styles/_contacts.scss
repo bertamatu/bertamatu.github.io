@@ -1,0 +1,12 @@
+#contacts  {
+    @include elementsHeightWidth (100vh, 100vw);
+    #gmap_canvas {
+        margin: 0;
+        border: none;
+        outline: none;
+        filter: grayscale(100%);
+        opacity: 0.9;
+        height: 100vh;
+        width: 100vw;
+    }
+  }

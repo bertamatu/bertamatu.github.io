@@ -1,0 +1,19 @@
+@import './variables';
+@import './mixins';
+@import './home';
+@import './about';
+@import './projects';
+@import './contacts';
+
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+    }
+
+body {
+    color: $mainTextColor;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    }

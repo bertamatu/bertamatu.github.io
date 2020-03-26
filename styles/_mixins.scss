@@ -1,0 +1,33 @@
+@mixin elementsHeightWidth ($height, $width) {
+    height: $height;
+    width: $width;
+}
+@mixin bckgFullScreen ($url) {
+    background-image: $url;
+    @include elementsHeightWidth (100vh, 100vw);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+// @mixin bckg_color_layer ($layerColor) {
+    // @include elementsHeightWidth(100vsh, 100vw );
+    // height: auto;
+    // background-color: $layerColor;
+    // position: absolute;
+    // top: 0;
+    // bottom: 0;
+    // z-index: -999;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#7db9e8+0,207cca+42,2989d8+61,1e5799+100 */
+// }
+
+@mixin bottomShadow {
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
+}
+@mixin topBottomShadow {
+    -webkit-box-shadow: 0px 0px 20px 11px rgba(0,0,0,0.41);
+    -moz-box-shadow: 0px 0px 20px 11px rgba(0,0,0,0.41);
+    box-shadow: 0px 0px 20px 11px rgba(0,0,0,0.41);
+}
