@@ -12,4 +12,4 @@
 //   }
 // }
 
-alert("I'm doing my best to make this website work ASAP. Sorry for the dust!");
+
