@@ -2,37 +2,46 @@
     @include elementsHeightWidth (100vh, 100vw);
     // @include bckgFullScreen (url(/imgs/gray-txt.jpg));
     .navbar {
+        padding-top: 5vh;
+        padding-left: 5vw;
+        .navbar_icons a{
+            color: rgba(255, 255, 255, 0.379);
+            font-weight: 100;
+            font-size: 1.6rem;
+            padding-left: 0.5rem;
+            text-decoration: none;
+        }
         .navbar-brand, .navbar-toggler{
             color: $navLinkColor;
             outline: none;
         }
         a {
             color: $navLinkColor;
-            font-size: 0.8rem;
+            font-size: 0.9rem;
             font-weight: 200;
+            padding-left: 0.5rem;
         }
         .dropdown-menu {
-            background-color: rgba(255, 255, 255, 0.8) !important;
+            background-color: rgba(190, 195, 196, 0.253) ;
             border: none;
-            // -webkit-box-shadow: 0px 0px 13px 1px rgba(0,0,0,0.59);
-            // -moz-box-shadow: 0px 0px 13px 1px rgba(0,0,0,0.59);
-            // box-shadow: 0px 0px 13px 1px rgba(0,0,0,0.59);
             a {
                 color: rgba(0, 0, 0, 0.74) !important;
             }
         }
     }
     .font_icons {
-        color: rgba(243, 2, 18, 0.7);
+        color: rgba(194, 192, 192, 0.507);
+        padding: 1rem;
 
-        // -webkit-box-shadow: 0px 0px 26px 2px rgba(0,0,0,0.67);
-        // -moz-box-shadow: 0px 0px 26px 2px rgba(0,0,0,0.67);
-        // box-shadow: 0px 0px 26px 2px rgba(0,0,0,0.67);
+        -webkit-box-shadow: 0px 0px 43px 18px rgba(0,0,0,0.55);
+        -moz-box-shadow: 0px 0px 43px 18px rgba(0,0,0,0.55);
+        box-shadow: 0px 0px 43px 18px rgba(0,0,0,0.55);
+
 
         text-align: center;
         position: relative;
         top: 40vh;
-        background-color: rgba(8, 194, 240, 0.06);
+        background-color: rgba(0, 0, 0, 0.103);
         .fas, .fab {
             padding: 0.5rem;
             opacity: 0.8;
@@ -52,7 +61,11 @@
         }
     }
     #video_wrapper {
-        background-color: rgba(255, 255, 255, 0.829);        
+        background: linear-gradient(150deg, 
+        rgba(56, 135, 145, 0.705) 20%, 
+        rgba(59, 114, 122, 0.822) 30%, 
+        rgba(0, 0, 0,1) 80%);
+
         position: absolute;
         top: 0; 
         right: 0; 
@@ -65,7 +78,7 @@
             height: 100%;
             object-fit: cover;
             // filter: grayscale(100);
-            opacity: 0.8;
+            opacity: 0.2;
           }
       }
       #bckgVideoBtn{
@@ -76,7 +89,8 @@
         left: 10vw;
       }
       .fa-pause-circle {
-        color: rgba(123, 197, 244, 0.15);
+        color: rgba(178, 247, 248, 0.08);
+        font-weight: 600;
         background: none;
         border: none;
       }
