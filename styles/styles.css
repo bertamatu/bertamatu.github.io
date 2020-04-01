@@ -2,105 +2,115 @@
 #home {
   height: 100vh;
   width: 100vw;
-  background-image: url(/imgs/gray-txt.jpg);
-  height: 100vh;
-  width: 100vw;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
 }
 
 #home .navbar .navbar-brand, #home .navbar .navbar-toggler {
-  color: rgba(250, 77, 74, 0.9);
+  color: rgba(255, 255, 255, 0.7);
+  outline: none;
 }
 
 #home .navbar a {
-  color: rgba(250, 77, 74, 0.9);
+  color: rgba(255, 255, 255, 0.7);
   font-size: 0.8rem;
-  font-weight: 500;
+  font-weight: 200;
 }
 
 #home .navbar .dropdown-menu {
-  background-color: rgba(255, 255, 255, 0.42) !important;
+  background-color: rgba(255, 255, 255, 0.8) !important;
   border: none;
-  -webkit-box-shadow: 0px 0px 13px 1px rgba(0, 0, 0, 0.59);
-  box-shadow: 0px 0px 13px 1px rgba(0, 0, 0, 0.59);
 }
 
 #home .navbar .dropdown-menu a {
-  color: rgba(45, 57, 56, 0.74) !important;
+  color: rgba(0, 0, 0, 0.74) !important;
 }
 
 #home .font_icons {
-  color: rgba(250, 77, 74, 0.9);
-  -webkit-box-shadow: 0px 0px 26px 2px rgba(0, 0, 0, 0.67);
-  box-shadow: 0px 0px 26px 2px rgba(0, 0, 0, 0.67);
+  color: rgba(243, 2, 18, 0.7);
   text-align: center;
-  padding: 1rem;
   position: relative;
-  top: 39vh;
-  font-size: 0.9rem;
-  background-color: rgba(33, 219, 240, 0.16);
+  top: 40vh;
+  background-color: rgba(8, 194, 240, 0.06);
 }
 
 #home .font_icons .fas, #home .font_icons .fab {
-  padding: 0.3rem;
+  padding: 0.5rem;
+  opacity: 0.8;
 }
 
 #home .font_icons .intro_text {
-  padding: 0.4rem;
   text-align: center;
 }
 
 #home .font_icons .intro_text .intro_text_name {
   font-size: 1.1rem;
-  font-weight: 600;
+  font-weight: 100;
   color: white;
 }
 
 #home .font_icons .intro_text .intro_text_tech {
   font-size: 1.3rem;
-  font-weight: 600;
+  font-weight: 100;
   color: white;
 }
 
-#home .font_icons hr {
-  background-color: white;
+#home #video_wrapper {
+  background-color: rgba(255, 255, 255, 0.829);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -999;
 }
 
-#home .font_icons .intro_text_responsive {
-  padding: 7rem;
-  color: white;
-  font-weight: 200;
+#home #video_wrapper #bckgVideo {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 0.8;
+}
+
+#home #bckgVideoBtn {
+  outline: none;
+  font-size: 6rem;
+  position: relative;
+  top: 55vh;
+  left: 10vw;
+}
+
+#home .fa-pause-circle {
+  color: rgba(123, 197, 244, 0.15);
+  background: none;
+  border: none;
 }
 
 #about {
-  background-image: url(/imgs/gray-txt-2.jpg);
+  background-image: url(https://images.pexels.com/photos/3787585/pexels-photo-3787585.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
   height: 100vh;
   width: 100vw;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
-  -webkit-box-shadow: 0px 0px 52px 23px rgba(0, 0, 0, 0.67);
-  box-shadow: 0px 0px 52px 23px rgba(0, 0, 0, 0.67);
 }
 
 #about .about_me_text {
   -webkit-box-shadow: 0px 0px 57px 2px rgba(0, 0, 0, 0.3);
   box-shadow: 0px 0px 57px 2px rgba(0, 0, 0, 0.3);
   text-align: justify;
+  width: 90vw;
   position: relative;
   top: 20vh;
   font-size: 0.8rem;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(171, 241, 250, 0.4);
   padding: 2rem;
   color: white;
 }
 
 #projects {
-  background-image: url(/imgs/gray-txt-3.jpg);
+  background-image: url(https://images.pexels.com/photos/3815729/pexels-photo-3815729.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260-txt-3.jpg);
   height: 100vh;
   width: 100vw;
   background-size: cover;
@@ -111,22 +121,11 @@
   box-shadow: 0px 0px 52px 52px rgba(0, 0, 0, 0.67);
 }
 
-#projects .projects_list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
 #projects .projects_list div {
-  background-color: rgba(160, 247, 224, 0.39);
+  background-color: rgba(171, 241, 250, 0.4);
   height: auto;
   width: auto;
   margin: 0 auto;
-  margin-top: 10vh;
   font-size: 0.8rem;
   padding: 2rem;
   -webkit-box-shadow: 0px 0px 40px 1px rgba(0, 0, 0, 0.67);

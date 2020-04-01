@@ -1,23 +1,24 @@
 #projects {
-    @include bckgFullScreen (url(/imgs/gray-txt-3.jpg));
+    @include bckgFullScreen (url(https://images.pexels.com/photos/3815729/pexels-photo-3815729.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260-txt-3.jpg));
     -webkit-box-shadow: 0px 0px 52px 52px rgba(0,0,0,0.67);
 -moz-box-shadow: 0px 0px 52px 52px rgba(0,0,0,0.67);
 box-shadow: 0px 0px 52px 52px rgba(0,0,0,0.67);
 
 
     .projects_list{
-        display: flex;
-        flex-direction: column;
+        // display: flex;
+        // flex-direction: column;
         div {
-            background-color: rgba(160, 247, 224, 0.39);
+            background-color: rgba(171, 241, 250, 0.4);
             height: auto;
             width: auto;
             margin: 0 auto;
-            margin-top: 10vh;
+
             font-size: 0.8rem;
             padding: 2rem;
 
-
+            // display: flex;
+            // flex-direction: column;
 
             -webkit-box-shadow: 0px 0px 40px 1px rgba(0,0,0,0.67);
             -moz-box-shadow: 0px 0px 40px 1px rgba(0,0,0,0.67);
