@@ -39,14 +39,10 @@
 }
 
 #home .font_icons {
-  color: rgba(194, 192, 192, 0.507);
   padding: 1rem;
-  -webkit-box-shadow: 0px 0px 43px 18px rgba(0, 0, 0, 0.55);
-  box-shadow: 0px 0px 43px 18px rgba(0, 0, 0, 0.55);
   text-align: center;
   position: relative;
   top: 40vh;
-  background-color: rgba(0, 0, 0, 0.103);
 }
 
 #home .font_icons .fas, #home .font_icons .fab {
@@ -181,6 +177,15 @@
 #contacts {
   height: 100vh;
   width: 100vw;
+  background-image: url(https://images.pexels.com/photos/3815759/pexels-photo-3815759.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  padding-top: 20vh;
+  background-color: black;
   -webkit-box-shadow: 0px 0px 52px 52px rgba(0, 0, 0, 0.67);
   box-shadow: 0px 0px 52px 52px rgba(0, 0, 0, 0.67);
 }
@@ -191,9 +196,21 @@
   outline: none;
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
-  opacity: 0.9;
-  height: 100vh;
+  opacity: 0.3;
+  margin-top: 20vh;
+  height: 30vh;
   width: 100vw;
+}
+
+#contacts .footer_text {
+  padding-top: 20vh;
+  width: 100vw;
+  height: 20vh;
+  background-color: rgba(171, 241, 250, 0.4);
+}
+
+#contacts a {
+  color: rgba(211, 14, 14, 0.4);
 }
 
 *, *:before, *:after {
