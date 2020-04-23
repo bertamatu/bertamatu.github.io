@@ -1,7 +1,8 @@
 #home {
     @include elementsHeightWidth (100vh, 100vw);
+    background-image: url(https://media.giphy.com/media/kjQ2DIoWpz76U/giphy.gif);
     background-color: rgb(255, 255, 255);
-    margin-top: 5vh;
+    // margin-top: 5vh;
         .vertical_navbar{
             z-index: 7777;
             width: 10vw;
@@ -30,12 +31,13 @@
         //         animation: spin 30s infinite alternate-reverse;
         //     }
         // }
-        img {
-            height: 30vh;
-            margin-left: 15vw;
+        // img {
+        //     height: 60vh;
+        //     margin-top: 15vh;
+        //     margin-left: 20vw;
             
             
-        }
+        // }
 }
 
 @keyframes spin {
