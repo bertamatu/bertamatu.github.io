@@ -2,10 +2,10 @@
 @import './mixins';
 @import './home';
 @import './about';
-@import './projects';
-@import './contacts';
+@import './work';
+@import './contact';
 
-*, *:before, *:after {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -15,5 +15,5 @@
 body {
     color: $mainTextColor;
     font-family: 'Roboto', sans-serif;
-    font-size: 1rem;
+    font-size: 12px;
     }

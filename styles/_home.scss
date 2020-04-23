@@ -1,101 +1,44 @@
 #home {
     @include elementsHeightWidth (100vh, 100vw);
-    // @include bckgFullScreen (url(/imgs/gray-txt.jpg));
-    .navbar {
-        padding-top: 5vh;
-        padding-left: 5vw;
-        .navbar_icons a{
-            color: rgba(255, 255, 255, 0.379);
-            font-weight: 100;
-            font-size: 1.6rem;
-            padding-left: 0.5rem;
-            text-decoration: none;
+    background-color: rgb(255, 255, 255);
+    margin-top: 5vh;
+        .vertical_navbar{
+            z-index: 7777;
+            width: 10vw;
+            height: 100vh;
+            position: fixed;
+            padding-top: 50%;
+                a {
+                    font-size: 1.5rem;
+                    font-weight: 100;
+                    color: rgb(126, 122, 122); 
+                    display: block; /* Make the links appear below each other */
+                    padding: 20px; 
+                    text-decoration: none;
+                    text-shadow: -2px -1px #00fbff;
+                } :hover {
+                    letter-spacing: 2px;
+                    transform: rotate(20deg);
+                    transition: ease-in-out 0.5s;
+                    color: rgb(255, 0, 0);
+                    // background-color: rgba(214, 60, 60, 0.112); /* Dark grey background on mouse-over */
+                }
         }
-        .navbar-brand, .navbar-toggler{
-            color: $navLinkColor;
-            outline: none;
+        // .intro_gif {
+        //     img {
+        //         padding-top: 70%;
+        //         animation: spin 30s infinite alternate-reverse;
+        //     }
+        // }
+        img {
+            height: 30vh;
+            margin-left: 15vw;
+            
+            
         }
-        a {
-            color: $navLinkColor;
-            font-size: 0.9rem;
-            font-weight: 200;
-            padding-left: 0.5rem;
-        }
-        .dropdown-menu {
-            background-color: rgba(190, 195, 196, 0.253) ;
-            border: none;
-            a {
-                color: rgba(0, 0, 0, 0.74) !important;
-            }
-        }
-    }
-    .font_icons {
-        // color: rgba(194, 192, 192, 0.507);
-        padding: 1rem;
-
-        // -webkit-box-shadow: 0px 0px 43px 18px rgba(0,0,0,0.55);
-        // -moz-box-shadow: 0px 0px 43px 18px rgba(0,0,0,0.55);
-        // box-shadow: 0px 0px 43px 18px rgba(0,0,0,0.55);
-
-
-        text-align: center;
-        position: relative;
-        top: 40vh;
-        // background-color: rgba(0, 0, 0, 0.103);
-        .fas, .fab {
-            padding: 0.5rem;
-            opacity: 0.8;
-        }
-        .intro_text {
-            text-align: center;
-            .intro_text_name {
-                font-size: 1.1rem;
-                font-weight: 100;
-                color: white;
-            }
-            .intro_text_tech {
-                font-size: 1.3rem;
-                font-weight: 100;
-                color: white;
-            }
-        }
-    }
-    #video_wrapper {
-        background: linear-gradient(150deg, 
-        rgba(56, 135, 145, 0.705) 20%, 
-        rgba(59, 114, 122, 0.822) 30%, 
-        rgba(0, 0, 0,1) 80%);
-
-        position: absolute;
-        top: 0; 
-        right: 0; 
-        bottom: 0; 
-        left: 0;
-        overflow: hidden;
-        z-index: -999;
-        #bckgVideo {
-            width: 100%; 
-            height: 100%;
-            object-fit: cover;
-            // filter: grayscale(100);
-            opacity: 0.2;
-          }
-      }
-      #bckgVideoBtn{
-        outline:none;
-        font-size: 6rem;
-        position: relative;
-        top: 55vh;
-        left: 10vw;
-      }
-      .fa-pause-circle {
-        color: rgba(178, 247, 248, 0.08);
-        font-weight: 600;
-        background: none;
-        border: none;
-      }
 }
-    
 
-      
-
+@keyframes spin {
+    0%  {-webkit-transform: rotate(0deg);}
+    100% {-webkit-transform: rotate(720deg);}   
+}

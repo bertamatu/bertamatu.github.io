@@ -1,25 +1,46 @@
 #about {
-    @include bckgFullScreen (url(https://images.pexels.com/photos/3787585/pexels-photo-3787585.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260));
-    
-    // -webkit-box-shadow: 0px 0px 52px 23px rgba(0,0,0,0.67);
-    // -moz-box-shadow: 0px 0px 52px 23px rgba(0,0,0,0.67);
-    // box-shadow: 0px 0px 52px 23px rgba(0,0,0,0.67);
-
-
+    @include bckgFullScreen (url(https://images.unsplash.com/photo-1572094541594-a0361a90d7df?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1972&q=80));
+    position: relative;
+    filter: grayscale(10%);;
     .about_me_text {
-        -webkit-box-shadow: 0px 0px 57px 2px rgba(0,0,0,0.3);
-        -moz-box-shadow: 0px 0px 57px 2px rgba(0,0,0,0.3);
-        box-shadow: 0px 0px 57px 2px rgba(0,0,0,0.3);
-
         text-align: justify;
-        width: 90vw;
-        position: relative;
-        top: 20vh;
-        font-size: 0.8rem;
-        background-color: rgba(171, 241, 250, 0.4);
+        width: 85vw;
+        position: absolute;
+        right: 0;
+        top: 5vh;
+        font-size: 0.7rem;
+        background-color: rgba(255, 255, 255, 0.932);
         padding: 2rem;
-
-        color: white;
+        color: rgb(0, 0, 0);
+            p {
+                font: 0.8rem;
+            }
+            .intro_text_name {
+                color: rgb(0, 0, 0);
+                font-weight: 600;
+                font-size: 1.2rem;
+                letter-spacing: 7px;
+                text-shadow: -2px -1px #00fbffc2;
+            }
+            .intro_text_tech {
+                color: rgb(0, 0, 0);
+                font-size: 1.1rem;
+                text-shadow: -2px -1px #ff0000c2;
+            }
+            .about_icons {
+                color: rgba(255, 0, 0, 0.342);
+                text-shadow: -2px -1px #03f4fc70;
+                padding: 5px;
+                margin-bottom: 2vh;
+                    .fab, .fas {
+                        font-size: 2rem;
+                        
+                    }
+        }
+        hr {
+            background-color: black;
+        }
 
     }
 }
+
