@@ -1,5 +1,6 @@
 #about {
     @include bckgFullScreen (url(https://images.unsplash.com/photo-1572094541594-a0361a90d7df?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1972&q=80));
+
     position: relative;
     filter: grayscale(10%);;
     .about_me_text {

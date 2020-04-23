@@ -2,8 +2,11 @@
 #home {
   height: 100vh;
   width: 100vw;
-  background-image: url(https://media.giphy.com/media/kjQ2DIoWpz76U/giphy.gif);
+  background-image: url(https://media.giphy.com/media/64aBXLFWO1B3WAqVJo/giphy.gif);
   background-color: white;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 #home .vertical_navbar {
@@ -17,39 +20,33 @@
 #home .vertical_navbar a {
   font-size: 1.5rem;
   font-weight: 100;
-  color: #7e7a7a;
+  color: #ff003c;
   display: block;
   /* Make the links appear below each other */
-  padding: 20px;
+  padding: 10px;
   text-decoration: none;
-  text-shadow: -2px -1px #00fbff;
 }
 
 #home .vertical_navbar :hover {
-  letter-spacing: 2px;
+  font-size: 2rem;
   -webkit-transform: rotate(20deg);
           transform: rotate(20deg);
   -webkit-transition: ease-in-out 0.5s;
   transition: ease-in-out 0.5s;
+  color: #00e5ff;
+}
+
+.icon_text {
+  position: relative;
+  bottom: 10px;
+  font-size: 1rem;
+  visibility: hidden;
   color: red;
 }
 
-@-webkit-keyframes spin {
-  0% {
-    -webkit-transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(720deg);
-  }
-}
-
-@keyframes spin {
-  0% {
-    -webkit-transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(720deg);
-  }
+:hover {
+  visibility: visible;
+  color: black;
 }
 
 #about {
@@ -152,6 +149,13 @@
 #contact {
   height: 100vh;
   width: 100vw;
+  background-image: url(https://images.unsplash.com/photo-1565626424178-c699f6601afd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2976&q=80);
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
   position: relative;
   text-align: center;
 }

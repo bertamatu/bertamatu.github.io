@@ -1,7 +1,10 @@
 #home {
     @include elementsHeightWidth (100vh, 100vw);
-    background-image: url(https://media.giphy.com/media/kjQ2DIoWpz76U/giphy.gif);
+    background-image: url(https://media.giphy.com/media/64aBXLFWO1B3WAqVJo/giphy.gif);
     background-color: rgb(255, 255, 255);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     // margin-top: 5vh;
         .vertical_navbar{
             z-index: 7777;
@@ -12,35 +15,42 @@
                 a {
                     font-size: 1.5rem;
                     font-weight: 100;
-                    color: rgb(126, 122, 122); 
+                    color: rgb(255, 0, 60); 
                     display: block; /* Make the links appear below each other */
-                    padding: 20px; 
+                    padding: 10px; 
                     text-decoration: none;
-                    text-shadow: -2px -1px #00fbff;
+                    // text-shadow: -2px -1px #00fbff;
                 } :hover {
-                    letter-spacing: 2px;
+                    // letter-spacing: 2px;
+                    font-size: 2rem;
                     transform: rotate(20deg);
                     transition: ease-in-out 0.5s;
-                    color: rgb(255, 0, 0);
+                    color: rgb(0, 229, 255);
                     // background-color: rgba(214, 60, 60, 0.112); /* Dark grey background on mouse-over */
                 }
         }
         // .intro_gif {
         //     img {
-        //         padding-top: 70%;
-        //         animation: spin 30s infinite alternate-reverse;
+        //         padding-top: 20%;
+        //         height: auto;
+        //         // width: 600px;
+
+        //         // animation: spin 30s infinite alternate-reverse;
         //     }
         // }
-        // img {
-        //     height: 60vh;
-        //     margin-top: 15vh;
-        //     margin-left: 20vw;
-            
-            
-        // }
 }
-
-@keyframes spin {
-    0%  {-webkit-transform: rotate(0deg);}
-    100% {-webkit-transform: rotate(720deg);}   
+.icon_text {
+    position:relative;
+    bottom: 10px;
+    font-size: 1rem;
+    // left:0px;
+    visibility: hidden;
+    color: red;
+} :hover {
+    visibility: visible;
+    color: black;
 }
+// @keyframes spin {
+//     0%  {-webkit-transform: rotate(0deg);}
+//     100% {-webkit-transform: rotate(720deg);}   
+// }
