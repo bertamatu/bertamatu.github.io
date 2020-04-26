@@ -1,11 +1,13 @@
 #about {
-    @include bckgFullScreen (url(https://images.unsplash.com/photo-1572094541594-a0361a90d7df?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1972&q=80));
+    @include elementsHeightWidth (100vh, 100vw);
+    // background-color: $color4;
 
+    // background-image: $gradient-bottom-left-2;
+    background-color: rgba($color: $color5, $alpha: 0.6);
     position: relative;
-    filter: grayscale(10%);;
     .about_me_text {
         text-align: justify;
-        width: 85vw;
+        width: 65vw;
         position: absolute;
         right: 0;
         top: 5vh;

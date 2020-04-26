@@ -1,70 +1,106 @@
-/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#7db9e8+0,207cca+42,2989d8+61,1e5799+100 */
+/* RGB */
+/* HEX */
+/* GRADIENT */
 #home {
   height: 100vh;
   width: 100vw;
-  background-image: url(https://media.giphy.com/media/64aBXLFWO1B3WAqVJo/giphy.gif);
-  background-color: white;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-#home .vertical_navbar {
-  z-index: 7777;
-  width: 10vw;
-  height: 100vh;
-  position: fixed;
-  padding-top: 50%;
-}
-
-#home .vertical_navbar a {
-  font-size: 1.5rem;
-  font-weight: 100;
-  color: #ff003c;
-  display: block;
-  /* Make the links appear below each other */
-  padding: 10px;
-  text-decoration: none;
-}
-
-#home .vertical_navbar :hover {
-  font-size: 2rem;
-  -webkit-transform: rotate(20deg);
-          transform: rotate(20deg);
-  -webkit-transition: ease-in-out 0.5s;
-  transition: ease-in-out 0.5s;
-  color: #00e5ff;
-}
-
-.icon_text {
-  position: relative;
-  bottom: 10px;
-  font-size: 1rem;
-  visibility: hidden;
-  color: red;
-}
-
-:hover {
-  visibility: visible;
-  color: black;
-}
-
-#about {
-  background-image: url(https://images.unsplash.com/photo-1572094541594-a0361a90d7df?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1972&q=80);
-  height: 100vh;
-  width: 100vw;
+  background-image: url(https://images.unsplash.com/photo-1566883497053-3666f2141bec?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
+  background-blend-mode: soft-light;
+  background-color: rgba(252, 253, 253, 0.1);
+}
+
+#home .vertical_navbar {
+  z-index: 1;
+  width: 10vw;
+  position: fixed;
+  margin-top: 50%;
+  margin-left: 5vw;
+}
+
+#home .vertical_navbar a {
+  font-size: 1.2rem;
+  font-weight: 100;
+  color: rgba(252, 253, 253, 0.7);
+  display: block;
+  /* Make the links appear below each other */
+  padding-left: 2vw;
+  text-decoration: none;
+}
+
+#home .vertical_navbar :hover {
+  font-size: 1.8rem;
+  -webkit-transform: rotate(20deg);
+          transform: rotate(20deg);
+  -webkit-transition: ease-in-out 0.2s;
+  transition: ease-in-out 0.2s;
+  color: #fcfdfd;
+}
+
+#home .vertical_navbar .icon_text {
   position: relative;
-  -webkit-filter: grayscale(10%);
-          filter: grayscale(10%);
+  bottom: 10px;
+  font-size: 1rem;
+  visibility: hidden;
+}
+
+#home .vertical_navbar :hover {
+  visibility: visible;
+  color: black;
+  font-size: 2rem;
+  -webkit-transition: ease-in-out 0.2s;
+  transition: ease-in-out 0.2s;
+}
+
+#home article {
+  padding-left: 20vw;
+  padding-top: 40vh;
+}
+
+#home article p {
+  margin: 0;
+}
+
+#home article .intro_text {
+  -webkit-box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.15);
+  color: #4a4e54;
+  padding-left: 5vw;
+  padding-bottom: 3vh;
+}
+
+#home article .intro_text .intro_name {
+  font-size: 2rem;
+  font-family: 'Cutive Mono', monospace;
+  border-radius: 2px;
+  opacity: 0.7;
+  font-weight: 900;
+  background: -webkit-linear-gradient(#fcfdfd, #f2d1c9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#home article .intro_text .intro_description {
+  font-family: 'Cutive Mono', monospace;
+  font-size: 0.7rem;
+  background-color: rgba(252, 253, 253, 0.2);
+  text-align: left;
+  padding: 10px;
+}
+
+#about {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(74, 78, 84, 0.6);
+  position: relative;
 }
 
 #about .about_me_text {
   text-align: justify;
-  width: 85vw;
+  width: 65vw;
   position: absolute;
   right: 0;
   top: 5vh;
@@ -121,7 +157,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-top: 30vh;
+  padding-top: 10vh;
 }
 
 #work .projects_list div {
@@ -142,16 +178,24 @@
 
 #work .projects_list div a {
   font-size: 0.9rem;
-  color: black;
+  color: #3c3c3c;
   padding: 1rem;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+#work .projects_list div .fab {
+  color: black;
+}
+
+#work .projects_list div :hover {
+  color: blue;
 }
 
 #contact {
   height: 100vh;
   width: 100vw;
   background-image: url(https://images.unsplash.com/photo-1565626424178-c699f6601afd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2976&q=80);
-  height: 100vh;
-  width: 100vw;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -214,7 +258,7 @@
 
 body {
   color: rgba(0, 0, 0, 0.9);
+  font-size: 11px;
   font-family: 'Roboto', sans-serif;
-  font-size: 12px;
 }
 /*# sourceMappingURL=styles.css.map */

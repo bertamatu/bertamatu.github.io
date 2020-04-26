@@ -4,7 +4,7 @@
     .projects_list{
         display: flex;
         flex-direction: column;
-        padding-top: 30vh;
+        padding-top: 10vh;
         div {
             display: flex;
             flex-direction: column;
@@ -16,8 +16,15 @@
             padding: 2rem;
             a {
                 font-size: 0.9rem;
-                color: rgb(0, 0, 0);
+                color: rgb(60, 60, 60);
                 padding: 1rem;
+                text-decoration: none;
+                font-size: 2rem;
+            }
+            .fab {
+                color: rgb(0, 0, 0);
+            }:hover {
+                color: blue;
             }
         }
     }  
