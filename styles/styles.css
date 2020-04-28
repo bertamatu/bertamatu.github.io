@@ -1,53 +1,56 @@
-/* RGB */
-/* HEX */
 /* GRADIENT */
 #home {
   height: 100vh;
   width: 100vw;
-  background-blend-mode: soft-light;
-  background-image: url(https://media.giphy.com/media/l41YeHIAtnC6iTYPe/giphy.gif);
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-size: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
 }
 
-#home .vertical_navbar {
+#home .nav_bar {
   z-index: 1;
-  width: 20vw;
-  background-color: rgba(252, 253, 253, 0.2);
-  height: 100vh;
+  background-color: rgba(12, 9, 13, 0.05);
   position: fixed;
-  padding-top: 50%;
-  padding-left: 5vw;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
-#home .vertical_navbar a {
+#home .nav_bar a {
   font-size: 1.2rem;
   font-weight: 100;
-  color: rgba(74, 78, 84, 0.8);
-  display: block;
-  /* Make the links appear below each other */
-  padding-left: 2vw;
+  color: #0c090d;
   text-decoration: none;
+  padding-top: 1vh;
 }
 
-#home .vertical_navbar :hover {
+#home .nav_bar :hover {
   font-size: 1.8rem;
   -webkit-transform: rotate(20deg);
           transform: rotate(20deg);
   -webkit-transition: ease-in-out 0.2s;
   transition: ease-in-out 0.2s;
-  color: #fcfdfd;
+  color: #0c090d;
 }
 
-#home .vertical_navbar .icon_text {
+#home .nav_bar .icon_text {
   position: relative;
   bottom: 10px;
   font-size: 1rem;
   visibility: hidden;
 }
 
-#home .vertical_navbar :hover {
+#home .nav_bar :hover {
   visibility: visible;
   color: black;
   font-size: 2rem;
@@ -56,37 +59,55 @@
 }
 
 #home article {
-  text-align: center;
-}
-
-#home article p {
-  margin: 0;
+  height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #home article .intro_text .logo {
   font-size: 3rem;
   font-family: 'Libre Barcode 128 Text', cursive;
-  background: -webkit-linear-gradient(#a5ccd1, #4a4e54);
+  background: -webkit-linear-gradient(#006c67, #ff4024);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  padding-top: 5vh;
-}
-
-#home article .intro_text .intro_text_name {
-  color: #4a4e54;
-  font-weight: 900;
 }
 
 #home article .intro_text .intro_description {
   font-family: 'Cutive Mono', monospace;
   font-size: 0.8rem;
+  letter-spacing: 4px;
+}
+
+#home article .intro_text .intro_description .intro_text_name {
+  color: #ff4024;
+  font-family: 'Arizonia', cursive;
+  font-size: 1.5rem;
+}
+
+#home article .intro_text .intro_description .intro_text_tech {
+  color: #006c67;
+  font-weight: 900;
+}
+
+#home .intro_img {
+  height: 50vh;
+  background-repeat: no-repeat;
+  background-position: bottom;
 }
 
 #about {
   height: 100vh;
   width: 100vw;
-  background-color: rgba(74, 78, 84, 0.6);
+  background-color: rgba(129, 151, 4, 0.6);
   position: relative;
 }
 
