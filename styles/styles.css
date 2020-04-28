@@ -4,27 +4,27 @@
 #home {
   height: 100vh;
   width: 100vw;
-  background-image: url(https://images.unsplash.com/photo-1566883497053-3666f2141bec?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
   background-blend-mode: soft-light;
-  background-color: rgba(252, 253, 253, 0.1);
+  background-image: url(https://media.giphy.com/media/l41YeHIAtnC6iTYPe/giphy.gif);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: auto;
 }
 
 #home .vertical_navbar {
   z-index: 1;
-  width: 10vw;
+  width: 20vw;
+  background-color: rgba(252, 253, 253, 0.2);
+  height: 100vh;
   position: fixed;
-  margin-top: 50%;
-  margin-left: 5vw;
+  padding-top: 50%;
+  padding-left: 5vw;
 }
 
 #home .vertical_navbar a {
   font-size: 1.2rem;
   font-weight: 100;
-  color: rgba(252, 253, 253, 0.7);
+  color: rgba(74, 78, 84, 0.8);
   display: block;
   /* Make the links appear below each other */
   padding-left: 2vw;
@@ -56,39 +56,31 @@
 }
 
 #home article {
-  padding-left: 20vw;
-  padding-top: 40vh;
+  text-align: center;
 }
 
 #home article p {
   margin: 0;
 }
 
-#home article .intro_text {
-  -webkit-box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.15);
-  box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.15);
-  color: #4a4e54;
-  padding-left: 5vw;
-  padding-bottom: 3vh;
-}
-
-#home article .intro_text .intro_name {
-  font-size: 2rem;
-  font-family: 'Cutive Mono', monospace;
-  border-radius: 2px;
-  opacity: 0.7;
-  font-weight: 900;
-  background: -webkit-linear-gradient(#fcfdfd, #f2d1c9);
+#home article .intro_text .logo {
+  font-size: 3rem;
+  font-family: 'Libre Barcode 128 Text', cursive;
+  background: -webkit-linear-gradient(#a5ccd1, #4a4e54);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  padding-top: 5vh;
+}
+
+#home article .intro_text .intro_text_name {
+  color: #4a4e54;
+  font-weight: 900;
 }
 
 #home article .intro_text .intro_description {
   font-family: 'Cutive Mono', monospace;
-  font-size: 0.7rem;
-  background-color: rgba(252, 253, 253, 0.2);
-  text-align: left;
-  padding: 10px;
+  font-size: 0.8rem;
 }
 
 #about {
