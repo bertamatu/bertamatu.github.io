@@ -1,5 +1,7 @@
 #work {
     @include elementsHeightWidth (100vh, 100vw);
+    @include bckgFullScreen (url(/imgs/black_board.jpg));
+
     background-color: rgb(0, 0, 0);
     .projects_list{
         display: flex;

@@ -2,6 +2,7 @@
 #home {
   height: 100vh;
   width: 100vw;
+  background-color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -9,53 +10,35 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: center;
 }
 
 #home .nav_bar {
   z-index: 1;
-  background-color: rgba(12, 9, 13, 0.05);
+  background-color: rgba(255, 255, 255, 0.05);
   position: fixed;
   width: 100vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  top: 0;
+  padding: 2vh;
 }
 
 #home .nav_bar a {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: 100;
   color: #0c090d;
   text-decoration: none;
-  padding-top: 1vh;
+  padding: 1vh 3vh;
 }
 
 #home .nav_bar :hover {
-  font-size: 1.8rem;
-  -webkit-transform: rotate(20deg);
-          transform: rotate(20deg);
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
   -webkit-transition: ease-in-out 0.2s;
   transition: ease-in-out 0.2s;
   color: #0c090d;
-}
-
-#home .nav_bar .icon_text {
-  position: relative;
-  bottom: 10px;
-  font-size: 1rem;
-  visibility: hidden;
-}
-
-#home .nav_bar :hover {
-  visibility: visible;
-  color: black;
-  font-size: 2rem;
-  -webkit-transition: ease-in-out 0.2s;
-  transition: ease-in-out 0.2s;
 }
 
 #home article {
@@ -73,32 +56,38 @@
 }
 
 #home article .intro_text .logo {
-  font-size: 3rem;
+  font-size: 4rem;
   font-family: 'Libre Barcode 128 Text', cursive;
-  background: -webkit-linear-gradient(#006c67, #ff4024);
+  background: -webkit-linear-gradient(#006c67, #0c090d);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  opacity: 0.8;
 }
 
 #home article .intro_text .intro_description {
   font-family: 'Cutive Mono', monospace;
+  color: #006c67;
   font-size: 0.8rem;
-  letter-spacing: 4px;
+  letter-spacing: 9px;
 }
 
 #home article .intro_text .intro_description .intro_text_name {
-  color: #ff4024;
-  font-family: 'Arizonia', cursive;
-  font-size: 1.5rem;
+  letter-spacing: normal;
 }
 
 #home article .intro_text .intro_description .intro_text_tech {
-  color: #006c67;
-  font-weight: 900;
+  color: #0c090d;
+  letter-spacing: normal;
 }
 
-#home .intro_img {
+#home article .intro_text .intro_description span {
+  background-color: rgba(12, 9, 13, 0.8);
+  padding: 6px 20px;
+  color: white;
+}
+
+#home article .intro_img {
   height: 50vh;
   background-repeat: no-repeat;
   background-position: bottom;
@@ -107,7 +96,11 @@
 #about {
   height: 100vh;
   width: 100vw;
-  background-color: rgba(129, 151, 4, 0.6);
+  background-image: url(/imgs/black_board.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
   position: relative;
 }
 
@@ -159,6 +152,11 @@
 #work {
   height: 100vh;
   width: 100vw;
+  background-image: url(/imgs/black_board.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
   background-color: black;
 }
 

@@ -1,9 +1,10 @@
 #about {
     @include elementsHeightWidth (100vh, 100vw);
+    @include bckgFullScreen (url(/imgs/black_board.jpg));
     // background-color: $color4;
 
     // background-image: $gradient-bottom-left-2;
-    background-color: rgba($color: $color5, $alpha: 0.6);
+    // background-color: rgba($color: $color5, $alpha: 0.6);
     position: relative;
     .about_me_text {
         text-align: justify;
