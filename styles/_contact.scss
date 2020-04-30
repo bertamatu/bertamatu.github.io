@@ -1,7 +1,7 @@
 #contact  {
     @include elementsHeightWidth (100vh, 100vw);
-    @include bckgFullScreen (url(https://images.unsplash.com/photo-1565626424178-c699f6601afd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2976&q=80));
-    // background-color: black;
+    // @include bckgFullScreen (url(https://images.unsplash.com/photo-1565626424178-c699f6601afd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2976&q=80));
+    background-color: rgb(69, 69, 69);
     position: relative;
     text-align: center;
 

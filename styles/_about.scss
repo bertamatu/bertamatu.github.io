@@ -1,50 +1,32 @@
 #about {
     @include elementsHeightWidth (100vh, 100vw);
-    @include bckgFullScreen (url(/imgs/black_board.jpg));
-    // background-color: $color4;
-
-    // background-image: $gradient-bottom-left-2;
-    // background-color: rgba($color: $color5, $alpha: 0.6);
+    background: linear-gradient(0deg, rgba($color: $color1, $alpha: 1) 0%,  rgba($color: $color2, $alpha: 1) 100%);
     position: relative;
-    .about_me_text {
-        text-align: justify;
-        width: 65vw;
-        position: absolute;
-        right: 0;
-        top: 5vh;
-        font-size: 0.7rem;
-        background-color: rgba(255, 255, 255, 0.932);
-        padding: 2rem;
-        color: rgb(0, 0, 0);
-            p {
-                font: 0.8rem;
-            }
-            .intro_text_name {
-                color: rgb(0, 0, 0);
-                font-weight: 600;
-                font-size: 1.2rem;
-                letter-spacing: 7px;
-                text-shadow: -2px -1px #00fbffc2;
-            }
-            .intro_text_tech {
-                color: rgb(0, 0, 0);
-                font-size: 1.1rem;
-                text-shadow: -2px -1px #ff0000c2;
-            }
+        .about_me_text {
+            text-align: justify;
+            border-radius: 5px;
+            width: 90vw;
+            position: absolute;
+            right: 0;
+            top: 10vh;
+            font-size: 0.7rem;
+            background-color: rgba($color: $color4, $alpha: 0.1);
+            padding: 4vh;
+            color: rgb(0, 0, 0);
+            font-size: 0.8rem;
+            font-family: 'Roboto', sans-serif;
             .about_icons {
-                color: rgba(255, 0, 0, 0.342);
-                text-shadow: -2px -1px #03f4fc70;
-                padding: 5px;
-                margin-bottom: 2vh;
-                    .fab, .fas {
-                        font-size: 2rem;
-                        
-                    }
-        }
-        hr {
-            background-color: black;
-        }
+                    text-align: center;
+                        .fab, .fas {
+                            @include textGradient($color2, $color1);
+                            font-size: 2rem;
+                            padding: 2vh 0.5vw;
+                        }
+                }
+            hr {
+                background-color: $color1;
+            }
 
-    }
+        }
 }
 

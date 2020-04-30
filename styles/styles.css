@@ -3,6 +3,7 @@
   height: 100vh;
   width: 100vw;
   background-color: white;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -17,32 +18,32 @@
 }
 
 #home .nav_bar {
-  z-index: 1;
-  background-color: rgba(255, 255, 255, 0.05);
-  position: fixed;
   width: 100vw;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.6);
+  position: fixed;
   top: 0;
-  padding: 2vh;
 }
 
 #home .nav_bar a {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 100;
-  color: #0c090d;
+  color: black;
   text-decoration: none;
-  padding: 1vh 3vh;
+  padding: 2vh 3vh;
 }
 
 #home .nav_bar :hover {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
-  -webkit-transition: ease-in-out 0.2s;
-  transition: ease-in-out 0.2s;
-  color: #0c090d;
+  -webkit-transition: ease-in 0.4s;
+  transition: ease-in 0.4s;
+  color: #009a92;
 }
 
 #home article {
-  height: 50vh;
+  width: 100vw;
+  height: 30vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -53,96 +54,91 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-top: 6vh;
 }
 
-#home article .intro_text .logo {
-  font-size: 4rem;
-  font-family: 'Libre Barcode 128 Text', cursive;
-  background: -webkit-linear-gradient(#006c67, #0c090d);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  opacity: 0.8;
+#home article .intro_text p {
+  font-family: 'Cutive Mono', monospace;
+  font-size: 0.8rem;
+  letter-spacing: 3px;
+}
+
+#home article .intro_text b {
+  background-color: black;
+  padding: 8px;
+  color: white;
+  letter-spacing: normal;
 }
 
 #home article .intro_text .intro_description {
-  font-family: 'Cutive Mono', monospace;
-  color: #006c67;
-  font-size: 0.8rem;
-  letter-spacing: 9px;
+  letter-spacing: 5px;
 }
 
 #home article .intro_text .intro_description .intro_text_name {
   letter-spacing: normal;
 }
 
-#home article .intro_text .intro_description .intro_text_tech {
-  color: #0c090d;
-  letter-spacing: normal;
-}
-
 #home article .intro_text .intro_description span {
-  background-color: rgba(12, 9, 13, 0.8);
-  padding: 6px 20px;
-  color: white;
+  background-color: black;
+  color: #e4280b;
+  padding: 10px;
 }
 
-#home article .intro_img {
-  height: 50vh;
-  background-repeat: no-repeat;
-  background-position: bottom;
+#home article .projects_button {
+  border: 1px solid black;
+  color: #009a92;
+  padding: 7px 10px;
+  border-radius: 30px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.7rem;
+  text-decoration: none;
+}
+
+#home .logo {
+  font-size: 2rem;
+  letter-spacing: 3px;
+  font-family: 'Libre Barcode 128 Text', cursive !important;
+  background: -webkit-linear-gradient(white, black);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
 }
 
 #about {
   height: 100vh;
   width: 100vw;
-  background-image: url(/imgs/black_board.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
+  background: -webkit-gradient(linear, left bottom, left top, from(black), to(white));
+  background: linear-gradient(0deg, black 0%, white 100%);
   position: relative;
 }
 
 #about .about_me_text {
   text-align: justify;
-  width: 65vw;
+  border-radius: 5px;
+  width: 90vw;
   position: absolute;
   right: 0;
-  top: 5vh;
+  top: 10vh;
   font-size: 0.7rem;
-  background-color: rgba(255, 255, 255, 0.932);
-  padding: 2rem;
+  background-color: rgba(0, 154, 146, 0.1);
+  padding: 4vh;
   color: black;
-}
-
-#about .about_me_text p {
-  font: 0.8rem;
-}
-
-#about .about_me_text .intro_text_name {
-  color: black;
-  font-weight: 600;
-  font-size: 1.2rem;
-  letter-spacing: 7px;
-  text-shadow: -2px -1px #00fbffc2;
-}
-
-#about .about_me_text .intro_text_tech {
-  color: black;
-  font-size: 1.1rem;
-  text-shadow: -2px -1px #ff0000c2;
+  font-size: 0.8rem;
+  font-family: 'Roboto', sans-serif;
 }
 
 #about .about_me_text .about_icons {
-  color: rgba(255, 0, 0, 0.342);
-  text-shadow: -2px -1px #03f4fc70;
-  padding: 5px;
-  margin-bottom: 2vh;
+  text-align: center;
 }
 
 #about .about_me_text .about_icons .fab, #about .about_me_text .about_icons .fas {
+  background: -webkit-linear-gradient(white, black);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-size: 2rem;
+  padding: 2vh 0.5vw;
 }
 
 #about .about_me_text hr {
@@ -152,11 +148,7 @@
 #work {
   height: 100vh;
   width: 100vw;
-  background-image: url(/imgs/black_board.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
+  position: relative;
   background-color: black;
 }
 
@@ -199,18 +191,10 @@
   color: black;
 }
 
-#work .projects_list div :hover {
-  color: blue;
-}
-
 #contact {
   height: 100vh;
   width: 100vw;
-  background-image: url(https://images.unsplash.com/photo-1565626424178-c699f6601afd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2976&q=80);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
+  background-color: #454545;
   position: relative;
   text-align: center;
 }

@@ -1,91 +1,94 @@
 #home {
     @include elementsHeightWidth (100vh, 100vw);
-    // @include bckgFullScreen (url(https://images.unsplash.com/photo-1566883497053-3666f2141bec?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60));
-    // @include bckgFullScreen (url(https://media.giphy.com/media/3oEdv1GbekAakxXO8g/giphy.gif))
+    background-color: white;
     // background-blend-mode: soft-light;
-    background-color: rgba($color: $color4, $alpha: 1);
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-
-    
         .nav_bar{
-            z-index: 1;
-            background-color: rgba($color: $color4, $alpha: 0.05);
-            position: fixed;
             width: 100vw;
+            z-index: 1;
+            background-color: rgba($color: $color2, $alpha: 0.6);
+            position: fixed;
             top: 0;
-            padding: 2vh;
                 a {
-                    font-size: 1.5rem;
+                    font-size: 1.2rem;
                     font-weight: 100;
                     color: rgba($color: $color1, $alpha: 1);
                     text-decoration: none;
-                    padding: 1vh 3vh ;
-
-        
+                    padding: 2vh 3vh ;
                 } :hover {
                     transform: rotate(180deg);
-                    transition: ease-in-out 0.2s;
-                    color: $color1;
+                    transition: ease-in 0.4s;
+                    color: $color4;
                 }
         }
         article {
-            height: 50vh;
+            width: 100vw;
+            height: 30vh;
             display: flex;
             flex-direction: column;
             justify-content: center;
+            padding-top: 6vh;
             .intro_text {
-                .logo {
-                    font-size: 4rem;
-                    font-family: 'Libre Barcode 128 Text', cursive;
-                    background: -webkit-linear-gradient($color3, $color1); // text gradient
-                    background-clip: text;
-                    -webkit-background-clip: text;  // text gradient
-                    -webkit-text-fill-color: transparent;  // text gradient
-                    opacity: 0.8;
+                p {
+                    font-family: 'Cutive Mono', monospace;
+                    font-size: 0.8rem;
+                    letter-spacing: 3px;
+                }
+                b {
+                    background-color: rgba($color: $color1, $alpha: 1);
+                    padding: 8px;
+                    color: $color2;
+                    letter-spacing: normal;
                 }
                 .intro_description {
-                    font-family: 'Cutive Mono', monospace;
-                    color: rgba($color: $color3, $alpha: 1);
-                    font-size: 0.8rem;
-                    letter-spacing: 9px;
-
-                    // background-color: rgba($color: $color5, $alpha: 0.2);
+                    letter-spacing: 5px;
                     .intro_text_name {
-                        letter-spacing: normal;
-
-                    }
-                    .intro_text_tech {
-                        color: rgba($color: $color1, $alpha: 1);
                         letter-spacing: normal;
                     }
                     span {
-                        background-color: rgba($color: $color1, $alpha: 0.8);
-                        padding: 6px 20px;
-                        color: rgba($color: $color4, $alpha: 1);
-                }
+                        background-color: rgba($color: $color1, $alpha: 1);
+                        color: rgba($color: $color, $alpha: 1);
+                        padding: 10px;
+
+                    }
+                }   
             }
-        }
-        .intro_img {
-            height: 50vh;
-            background-repeat: no-repeat;
-            background-position: bottom;
-    }
-
         // .img_container {
-        //     width: 0;
-        //     height: 0;
-        //     border-style: solid;
-        //     border-width: 200px 0 0 200px;
-        //     border-color: transparent transparent transparent #e20909;
-        //     line-height: 0px;
-        //     _border-color: #000000 #000000 #000000 #ffffff;
-
-        //     opacity: 0.5;
+        //     img{
+        //         // filter: grayscale(100%);
+        //     }
         // }
+            .projects_button {
+                border: 1px solid $color1;
+                color: $color4;
+                padding: 7px 10px;
+                border-radius: 30px;
+                font-family: 'Roboto', sans-serif;
+                font-size: 0.7rem;
+                text-decoration: none;
+            }
+        
+
 }
+.logo {
+    font-size: 2rem;
+    letter-spacing: 3px;
+    font-family: 'Libre Barcode 128 Text', cursive !important; 
+    @include textGradient($color2, $color1);
+    margin: 0;
+}
+// .intro_triangle {
+//                 width: 0;
+//                 height: 0;
+//                 border-style: solid;
+//                 border-width: 0vh 0vh 5vh 100vw;
+//                 border-color: transparent transparent transparent rgba($color: $color1, $alpha: 1);
+//                 line-height: 0px;
+// }
 }
 // @keyframes spin {
 //     0%  {-webkit-transform: rotate(0deg);}
