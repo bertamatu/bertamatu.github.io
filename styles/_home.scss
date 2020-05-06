@@ -1,7 +1,6 @@
 #home {
     @include elementsHeightWidth (100vh, 100vw);
-    background-color: white;
-    // background-blend-mode: soft-light;
+    @include bckgFullScreen (url(/imgs/black_leaves.jpeg));
     position: relative;
     display: flex;
     flex-direction: column;
@@ -10,19 +9,19 @@
         .nav_bar{
             width: 100vw;
             z-index: 1;
-            background-color: rgba($color: $color2, $alpha: 0.6);
+            background-color: rgba($color: $color2, $alpha: 0.1);
             position: fixed;
             top: 0;
                 a {
                     font-size: 1.2rem;
                     font-weight: 100;
-                    color: rgba($color: $color1, $alpha: 1);
+                    color: rgba($color: $color4, $alpha: 1);
                     text-decoration: none;
                     padding: 2vh 3vh ;
                 } :hover {
                     transform: rotate(180deg);
                     transition: ease-in 0.4s;
-                    color: $color4;
+                    color: rgba($color: $color1, $alpha: 1);
                 }
         }
         article {
@@ -36,40 +35,39 @@
                 p {
                     font-family: 'Cutive Mono', monospace;
                     font-size: 0.8rem;
-                    letter-spacing: 3px;
+                    letter-spacing: 2px;
+                    color: rgba($color: $color2, $alpha: 0.7);
+
                 }
                 b {
-                    background-color: rgba($color: $color1, $alpha: 1);
                     padding: 8px;
-                    color: $color2;
+                    color: $color3;
                     letter-spacing: normal;
                 }
                 .intro_description {
                     letter-spacing: 5px;
                     .intro_text_name {
-                        letter-spacing: normal;
+                        letter-spacing: 2px;
+                        font-size: 0.9rem;
+                        font-family: 'Roboto', sans-serif;
                     }
                     span {
-                        background-color: rgba($color: $color1, $alpha: 1);
-                        color: rgba($color: $color, $alpha: 1);
-                        padding: 10px;
-
+                        background-color: rgba($color: $color2, $alpha: 0.1);
+                        padding: 15px;
                     }
                 }   
             }
-        // .img_container {
-        //     img{
-        //         // filter: grayscale(100%);
-        //     }
-        // }
             .projects_button {
-                border: 1px solid $color1;
-                color: $color4;
-                padding: 7px 10px;
+                border: 1px solid rgba($color: $color1, $alpha: 0.7);
+                color: rgba($color: $color2, $alpha: 0.6);
+                padding: 10px 15px;
                 border-radius: 30px;
                 font-family: 'Roboto', sans-serif;
-                font-size: 0.7rem;
+                font-size: 0.6rem;
                 text-decoration: none;
+                letter-spacing: 1px;
+                background: linear-gradient(0deg, rgba($color: $color1, $alpha: 0.7) 0%,  rgba($color: $color2, $alpha: 0.3) 100%);
+
             }
         
 
@@ -78,9 +76,10 @@
     font-size: 2rem;
     letter-spacing: 3px;
     font-family: 'Libre Barcode 128 Text', cursive !important; 
-    @include textGradient($color2, $color1);
+    @include textGradient($color1, $color4);
     margin: 0;
-}
+
+
 // .intro_triangle {
 //                 width: 0;
 //                 height: 0;
@@ -95,3 +94,5 @@
 //     100% {-webkit-transform: rotate(720deg);}   
 // }
 // animation: spin 30s infinite alternate-reverse;
+
+}

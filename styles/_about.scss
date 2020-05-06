@@ -1,6 +1,6 @@
 #about {
     @include elementsHeightWidth (100vh, 100vw);
-    background: linear-gradient(0deg, rgba($color: $color1, $alpha: 1) 0%,  rgba($color: $color2, $alpha: 1) 100%);
+    background: linear-gradient(0deg, rgba($color: $color1, $alpha: 1) 100%,  rgba($color: $color2, $alpha: 1) 0%);
     position: relative;
         .about_me_text {
             text-align: justify;
@@ -10,9 +10,9 @@
             right: 0;
             top: 10vh;
             font-size: 0.7rem;
-            background-color: rgba($color: $color4, $alpha: 0.1);
+            background-color: rgba($color: $color2, $alpha: 0.1);
             padding: 4vh;
-            color: rgb(0, 0, 0);
+            color: rgba($color: $color3, $alpha: 1);
             font-size: 0.8rem;
             font-family: 'Roboto', sans-serif;
             .about_icons {
@@ -22,11 +22,10 @@
                             font-size: 2rem;
                             padding: 2vh 0.5vw;
                         }
-                }
+            }
             hr {
                 background-color: $color1;
             }
-
         }
 }
 
