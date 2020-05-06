@@ -3,13 +3,13 @@
     @include bckgFullScreen (url(/imgs/bckg_lines.jpeg));
 
     position: relative;
-
- 
     background-color: rgb(0, 0, 0);
     .projects_list{
         display: flex;
         flex-direction: column;
         padding-top: 10vh;
+
+
         div {
             display: flex;
             flex-direction: column;
@@ -19,6 +19,12 @@
             margin-left: 15vw;
             font-size: 0.8rem;
             padding: 2rem;
+
+
+            -webkit-box-shadow: -10px 9px 5px 0px rgba(0,0,0,0.13);
+            -moz-box-shadow: -10px 9px 5px 0px rgba(0,0,0,0.13);
+            box-shadow: -10px 9px 5px 0px rgba(0,0,0,0.13);
+            
             a {
                 font-size: 0.9rem;
                 color: rgb(60, 60, 60);

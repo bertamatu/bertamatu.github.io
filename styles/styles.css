@@ -2,7 +2,7 @@
 #home {
   height: 100vh;
   width: 100vw;
-  background-image: url(/imgs/black_leaves.jpeg);
+  background-image: url(/imgs/green_leaves.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -24,7 +24,7 @@
 #home .nav_bar {
   width: 100vw;
   z-index: 1;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.05);
   position: fixed;
   top: 0;
 }
@@ -32,7 +32,7 @@
 #home .nav_bar a {
   font-size: 1.2rem;
   font-weight: 100;
-  color: #009a92;
+  color: rgba(255, 255, 255, 0.4);
   text-decoration: none;
   padding: 2vh 3vh;
 }
@@ -42,7 +42,7 @@
           transform: rotate(180deg);
   -webkit-transition: ease-in 0.4s;
   transition: ease-in 0.4s;
-  color: black;
+  color: rgba(0, 154, 146, 0.6);
 }
 
 #home article {
@@ -63,77 +63,100 @@
 
 #home article .intro_text p {
   font-family: 'Cutive Mono', monospace;
-  font-size: 0.8rem;
-  letter-spacing: 2px;
+  font-size: 1rem;
+  letter-spacing: 5px;
   color: rgba(255, 255, 255, 0.7);
 }
 
 #home article .intro_text b {
-  padding: 8px;
-  color: #e4280b;
+  padding: 12px;
+  color: rgba(228, 40, 11, 0.9);
   letter-spacing: normal;
 }
 
 #home article .intro_text .intro_description {
-  letter-spacing: 5px;
+  letter-spacing: normal;
 }
 
 #home article .intro_text .intro_description .intro_text_name {
-  letter-spacing: 2px;
+  letter-spacing: normal;
   font-size: 0.9rem;
-  font-family: 'Roboto', sans-serif;
 }
 
 #home article .intro_text .intro_description span {
   background-color: rgba(255, 255, 255, 0.1);
-  padding: 15px;
+  padding: 12px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
 }
 
-#home article .projects_button {
+#home article .intro_text .welcome_message {
+  letter-spacing: normal;
+  padding-top: 2vh;
+}
+
+#home article .intro_text .projects_button {
   border: 1px solid rgba(0, 0, 0, 0.7);
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.9);
   padding: 10px 15px;
   border-radius: 30px;
   font-family: 'Roboto', sans-serif;
   font-size: 0.6rem;
   text-decoration: none;
   letter-spacing: 1px;
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.7)), to(rgba(255, 255, 255, 0.3)));
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 0%, rgba(255, 255, 255, 0.3) 100%);
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.3)), to(rgba(255, 255, 255, 0.2)));
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3) 0%, rgba(255, 255, 255, 0.2) 100%);
 }
 
 #home .logo {
   font-size: 2rem;
   letter-spacing: 3px;
   font-family: 'Libre Barcode 128 Text', cursive !important;
-  background: -webkit-linear-gradient(black, #009a92);
+  background: -webkit-linear-gradient(white, #009a92);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin: 0;
+  opacity: 0.4;
+  margin: 4vh 0;
+}
+
+.projects_button:hover {
+  -webkit-box-shadow: 10px 10px 5px -2px rgba(0, 0, 0, 0.4);
+  box-shadow: 10px 10px 5px -2px rgba(0, 0, 0, 0.4);
+  -webkit-transition: ease-in-out 0.5s;
+  transition: ease-in-out 0.5s;
 }
 
 #about {
   height: 100vh;
   width: 100vw;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(100%, black), color-stop(0%, white));
-  background: linear-gradient(0deg, black 100%, white 0%);
+  background-color: black;
   position: relative;
+}
+
+#about .about_color_layer {
+  height: 100vh;
+  width: 100vw;
+  background-image: -webkit-gradient(linear, right bottom, left top, from(#030303), color-stop(#0b0c10), color-stop(#0f1319), color-stop(#101921), color-stop(#0e1f28), color-stop(#0e1f28), color-stop(#0e1f28), color-stop(#0e1f28), color-stop(#101921), color-stop(#0f1319), color-stop(#0b0c10), to(#030303));
+  background-image: linear-gradient(to left top, #030303, #0b0c10, #0f1319, #101921, #0e1f28, #0e1f28, #0e1f28, #0e1f28, #101921, #0f1319, #0b0c10, #030303);
+  opacity: 0.4;
 }
 
 #about .about_me_text {
   text-align: justify;
   border-radius: 5px;
-  width: 90vw;
+  width: 70vw;
   position: absolute;
-  right: 0;
   top: 10vh;
   font-size: 0.7rem;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.02);
   padding: 4vh;
-  color: #e4280b;
+  color: rgba(255, 255, 255, 0.8);
   font-size: 0.8rem;
   font-family: 'Roboto', sans-serif;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.34);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.34);
 }
 
 #about .about_me_text .about_icons {
@@ -145,12 +168,13 @@
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 2rem;
+  opacity: 0.5;
+  font-size: 1.5rem;
   padding: 2vh 0.5vw;
 }
 
 #about .about_me_text hr {
-  background-color: black;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 #work {
@@ -190,6 +214,8 @@
   margin-left: 15vw;
   font-size: 0.8rem;
   padding: 2rem;
+  -webkit-box-shadow: -10px 9px 5px 0px rgba(0, 0, 0, 0.13);
+  box-shadow: -10px 9px 5px 0px rgba(0, 0, 0, 0.13);
 }
 
 #work .projects_list div a {

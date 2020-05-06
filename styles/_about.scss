@@ -1,31 +1,41 @@
 #about {
     @include elementsHeightWidth (100vh, 100vw);
-    background: linear-gradient(0deg, rgba($color: $color1, $alpha: 1) 100%,  rgba($color: $color2, $alpha: 1) 0%);
+    background-color: $color1;
+
     position: relative;
+    .about_color_layer {
+        height: 100vh;
+        width: 100vw;
+        background-image: linear-gradient(to left top, #030303, #0b0c10, #0f1319, #101921, #0e1f28, #0e1f28, #0e1f28, #0e1f28, #101921, #0f1319, #0b0c10, #030303);
+        opacity: 0.4;
+    }
         .about_me_text {
             text-align: justify;
             border-radius: 5px;
-            width: 90vw;
+            width: 70vw;
             position: absolute;
-            right: 0;
             top: 10vh;
             font-size: 0.7rem;
-            background-color: rgba($color: $color2, $alpha: 0.1);
+            background-color: rgba($color: $color2, $alpha: 0.02);
             padding: 4vh;
-            color: rgba($color: $color3, $alpha: 1);
+            color: rgba($color: $color2, $alpha: 0.8);
             font-size: 0.8rem;
             font-family: 'Roboto', sans-serif;
+            -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.34);
+            -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.34);
+            box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.34);
             .about_icons {
                     text-align: center;
                         .fab, .fas {
                             @include textGradient($color2, $color1);
-                            font-size: 2rem;
+                            opacity: 0.5;
+                            font-size: 1.5rem;
                             padding: 2vh 0.5vw;
                         }
             }
             hr {
-                background-color: $color1;
+                background-color: rgba($color: $color2, $alpha: 0.1);
             }
-        }
-}
+        } 
+    }
 
