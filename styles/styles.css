@@ -1,53 +1,29 @@
+/* RGB */
 /* GRADIENT */
 #home {
   height: 100vh;
   width: 100vw;
-  background-image: url(/imgs/green_leaves.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-align: center;
 }
 
-#home .nav_bar {
-  width: 100vw;
-  z-index: 1;
-  background-color: rgba(255, 255, 255, 0.05);
-  position: fixed;
-  top: 0;
-}
-
-#home .nav_bar a {
-  font-size: 1.2rem;
+#home .home_navbar {
+  background-color: white !important;
+  font-family: sans-serif;
   font-weight: 100;
-  color: rgba(255, 255, 255, 0.4);
-  text-decoration: none;
-  padding: 2vh 3vh;
+  font-size: 0.9rem;
+  text-align: center;
+  padding: 3vh;
 }
 
-#home .nav_bar :hover {
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-  -webkit-transition: ease-in 0.4s;
-  transition: ease-in 0.4s;
-  color: rgba(0, 154, 146, 0.6);
+#home .home_navbar .navbar-nav .nav-item, #home .home_navbar .navbar-nav span {
+  color: #10110e !important;
+  padding-left: 3vw;
 }
 
-#home article {
-  width: 100vw;
-  height: 30vh;
+#home .home_logo {
+  z-index: 999;
+  font-family: "Montserrat";
+  text-align: center;
+  color: #FFF;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -55,65 +31,41 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 6vh;
-}
-
-#home article .intro_text p {
-  font-family: 'Cutive Mono', monospace;
-  font-size: 1rem;
-  letter-spacing: 5px;
-  color: rgba(255, 255, 255, 0.7);
-}
-
-#home article .intro_text b {
-  padding: 12px;
-  color: rgba(228, 40, 11, 0.9);
-  letter-spacing: normal;
-}
-
-#home article .intro_text .intro_description {
-  letter-spacing: normal;
-}
-
-#home article .intro_text .intro_description .intro_text_name {
-  letter-spacing: normal;
-  font-size: 0.9rem;
-}
-
-#home article .intro_text .intro_description span {
-  background-color: rgba(255, 255, 255, 0.1);
-  padding: 12px;
-  border-radius: 4px;
-  -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
-}
-
-#home article .intro_text .welcome_message {
-  letter-spacing: normal;
-  padding-top: 2vh;
-}
-
-#home article .intro_text .projects_button {
-  border: 1px solid rgba(0, 0, 0, 0.7);
-  color: rgba(255, 255, 255, 0.9);
-  padding: 10px 15px;
-  border-radius: 30px;
-  font-family: 'Roboto', sans-serif;
-  font-size: 0.6rem;
-  text-decoration: none;
+  height: 100vh;
   letter-spacing: 1px;
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.3)), to(rgba(255, 255, 255, 0.2)));
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3) 0%, rgba(255, 255, 255, 0.2) 100%);
 }
 
-#home .logo {
+#home .home_logo h1 {
+  background-image: url(https://media.giphy.com/media/3o6ZsVGl3vuG5g0Kic/giphy.gif);
+  background-size: cover;
+  background-position: center;
+  color: transparent;
+  background-clip: border-box;
+  -moz-background-clip: text;
+  -webkit-background-clip: text;
+  text-transform: uppercase;
+  font-size: 120px;
+  line-height: .75;
+  margin: 10px 0;
+}
+
+#home .home_logo div {
+  width: 380px;
+  height: 2px;
+  background-color: rgba(254, 123, 115, 0.7);
+}
+
+.logo {
   font-size: 2rem;
   letter-spacing: 3px;
   font-family: 'Libre Barcode 128 Text', cursive !important;
-  background: -webkit-linear-gradient(white, #009a92);
+  background: -webkit-linear-gradient(#10110e, #6cc2c3);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -121,26 +73,24 @@
   margin: 4vh 0;
 }
 
-.projects_button:hover {
-  -webkit-box-shadow: 10px 10px 5px -2px rgba(0, 0, 0, 0.4);
-  box-shadow: 10px 10px 5px -2px rgba(0, 0, 0, 0.4);
-  -webkit-transition: ease-in-out 0.5s;
-  transition: ease-in-out 0.5s;
-}
-
 #about {
   height: 100vh;
   width: 100vw;
-  background-color: #02020a;
+  background-image: url(https://images.unsplash.com/photo-1566041510639-8d95a2490bfb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=652&q=80);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
   position: relative;
 }
 
-#about .about_color_layer {
-  height: 100vh;
-  width: 100vw;
-  background-image: -webkit-gradient(linear, right bottom, left top, from(#030303), color-stop(#0b0c10), color-stop(#0f1319), color-stop(#101921), color-stop(#0e1f28), color-stop(#0e1f28), color-stop(#0e1f28), color-stop(#0e1f28), color-stop(#101921), color-stop(#0f1319), color-stop(#0b0c10), to(#030303));
-  background-image: linear-gradient(to left top, #030303, #0b0c10, #0f1319, #101921, #0e1f28, #0e1f28, #0e1f28, #0e1f28, #101921, #0f1319, #0b0c10, #030303);
-  opacity: 0.3;
+#about .intro_triangle {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0vh 0vh 50vh 100vw;
+  border-color: transparent transparent transparent white;
+  line-height: 0px;
 }
 
 #about .about_me_text {
@@ -150,13 +100,13 @@
   position: absolute;
   top: 10vh;
   font-size: 0.7rem;
-  background-color: rgba(255, 255, 255, 0.02);
+  background-color: rgba(255, 255, 255, 0.2);
   padding: 4vh;
-  color: rgba(255, 255, 255, 0.8);
+  color: #10110e;
   font-size: 0.8rem;
   font-family: 'Roboto', sans-serif;
-  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.34);
-  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.34);
+  -webkit-box-shadow: 10px 10px 9px -2px rgba(0, 0, 0, 0.1);
+  box-shadow: 10px 10px 9px -2px rgba(0, 0, 0, 0.1);
 }
 
 #about .about_me_text .about_icons {
@@ -164,29 +114,28 @@
 }
 
 #about .about_me_text .about_icons .fab, #about .about_me_text .about_icons .fas {
-  background: -webkit-linear-gradient(white, black);
+  background: -webkit-linear-gradient(white, #6cc2c3);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  opacity: 0.5;
   font-size: 1.5rem;
   padding: 2vh 0.5vw;
 }
 
 #about .about_me_text hr {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: white;
 }
 
 #work {
   height: 100vh;
   width: 100vw;
-  background-image: url(/imgs/bckg_lines.jpeg);
+  background-image: url(https://images.unsplash.com/photo-1524230572899-a752b3835840?ixlib=rb-1.2.1&auto=format&fit=crop&w=976&q=80);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
   position: relative;
-  background-color: black;
+  color: #10110e;
 }
 
 #work .projects_list {
@@ -209,40 +158,30 @@
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 10vw;
-  background-color: rgba(255, 255, 255, 0.454);
+  background-color: rgba(33, 139, 155, 0.071);
   margin-bottom: 20px;
   margin-left: 15vw;
   font-size: 0.8rem;
   padding: 2rem;
-  -webkit-box-shadow: -10px 9px 5px 0px rgba(0, 0, 0, 0.13);
-  box-shadow: -10px 9px 5px 0px rgba(0, 0, 0, 0.13);
+  -webkit-box-shadow: 10px 10px 9px -2px rgba(0, 0, 0, 0.1);
+  box-shadow: 10px 10px 9px -2px rgba(0, 0, 0, 0.1);
 }
 
 #work .projects_list div a {
   font-size: 0.9rem;
-  color: #3c3c3c;
   padding: 1rem;
   text-decoration: none;
   font-size: 2rem;
 }
 
 #work .projects_list div .fab {
-  color: black;
+  color: #215e6e;
 }
 
 #contact {
   height: 100vh;
   width: 100vw;
-}
-
-#contact #gmap_canvas {
-  margin: 0;
-  border: none;
-  outline: none;
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
-  height: 100vh;
-  width: 100vw;
+  background-attachment: white;
 }
 
 * {

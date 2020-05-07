@@ -1,39 +1,41 @@
 #work {
     @include elementsHeightWidth (100vh, 100vw);
-    @include bckgFullScreen (url(/imgs/bckg_lines.jpeg));
+    @include bckgFullScreen (url(https://images.unsplash.com/photo-1524230572899-a752b3835840?ixlib=rb-1.2.1&auto=format&fit=crop&w=976&q=80));
+    // @include bckgFullScreen (url(https://images.unsplash.com/photo-1582039724720-cbf932c17979?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80));
+
+
 
     position: relative;
-    background-color: rgb(0, 0, 0);
+    // background-color: rgb(0, 0, 0);
+    color: $color2;
+
     .projects_list{
         display: flex;
         flex-direction: column;
         padding-top: 10vh;
 
-
         div {
             display: flex;
             flex-direction: column;
             padding: 10vw;
-            background-color: rgba(255, 255, 255, 0.454);
+            background-color: rgba(33, 139, 155, 0.071);
             margin-bottom: 20px;
             margin-left: 15vw;
             font-size: 0.8rem;
             padding: 2rem;
+            -webkit-box-shadow: 10px 10px 9px -2px rgba(0,0,0,0.1);
+            -moz-box-shadow: 10px 10px 9px -2px rgba(0,0,0,0.1);
+            box-shadow: 10px 10px 9px -2px rgba(0,0,0,0.1);           
 
-
-            -webkit-box-shadow: -10px 9px 5px 0px rgba(0,0,0,0.13);
-            -moz-box-shadow: -10px 9px 5px 0px rgba(0,0,0,0.13);
-            box-shadow: -10px 9px 5px 0px rgba(0,0,0,0.13);
             
             a {
                 font-size: 0.9rem;
-                color: rgb(60, 60, 60);
                 padding: 1rem;
                 text-decoration: none;
                 font-size: 2rem;
             }
             .fab {
-                color: rgb(0, 0, 0);
+                color: rgb(33, 94, 110);
             }
         }
     }  

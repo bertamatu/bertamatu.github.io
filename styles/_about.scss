@@ -1,14 +1,18 @@
 #about {
     @include elementsHeightWidth (100vh, 100vw);
-    background-color: rgb(2, 2, 10);
-
+    @include bckgFullScreen (url( https://images.unsplash.com/photo-1566041510639-8d95a2490bfb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=652&q=80));
+   
     position: relative;
-    .about_color_layer {
-        height: 100vh;
-        width: 100vw;
-        background-image: linear-gradient(to left top, #030303, #0b0c10, #0f1319, #101921, #0e1f28, #0e1f28, #0e1f28, #0e1f28, #101921, #0f1319, #0b0c10, #030303);
-        opacity: 0.3;
+
+    .intro_triangle {
+                    width: 0;
+                    height: 0;
+                    border-style: solid;
+                    border-width: 0vh 0vh 50vh 100vw;
+                    border-color:  transparent transparent transparent rgba($color: $color3, $alpha: 1);
+                    line-height: 0px;                     
     }
+
         .about_me_text {
             text-align: justify;
             border-radius: 5px;
@@ -16,25 +20,30 @@
             position: absolute;
             top: 10vh;
             font-size: 0.7rem;
-            background-color: rgba($color: $color2, $alpha: 0.02);
+            background-color: rgba($color: $color3, $alpha: 0.2);
             padding: 4vh;
-            color: rgba($color: $color2, $alpha: 0.8);
+            color: rgba($color: $color2, $alpha: 1);
             font-size: 0.8rem;
             font-family: 'Roboto', sans-serif;
-            -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.34);
-            -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.34);
-            box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.34);
+
+            -webkit-box-shadow: 10px 10px 9px -2px rgba(0,0,0,0.1);
+            -moz-box-shadow: 10px 10px 9px -2px rgba(0,0,0,0.1);
+            box-shadow: 10px 10px 9px -2px rgba(0,0,0,0.1);           
+
+
+
+
+
             .about_icons {
                     text-align: center;
                         .fab, .fas {
-                            @include textGradient($color2, $color1);
-                            opacity: 0.5;
+                            @include textGradient($color3, $color4);
                             font-size: 1.5rem;
                             padding: 2vh 0.5vw;
                         }
             }
             hr {
-                background-color: rgba($color: $color2, $alpha: 0.1);
+                background-color: rgba($color: $color3, $alpha: 1);
             }
         } 
     }
