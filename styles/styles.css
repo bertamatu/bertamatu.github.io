@@ -79,16 +79,11 @@
 #about {
   height: 100vh;
   width: 100vw;
-  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#a8edea), to(#fed6e3));
-  background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#d5dee7), color-stop(0%, #ffafbd), to(#c9ffbf));
-  background-image: linear-gradient(to top, #d5dee7 0%, #ffafbd 0%, #c9ffbf 100%);
-  background-image: linear-gradient(-225deg, #FFFEFF 0%, #D7FFFE 100%);
-  background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
-  background-image: linear-gradient(-225deg, #B7F8DB 0%, #50A7C2 100%);
-  background-image: linear-gradient(315deg, #feae96 0%, #fe0944 74%);
-  background-image: linear-gradient(315deg, #08AEEA 0%, #2AF598 53%, #ffffff 100%);
+  background-image: url(/imgs/grey-dots.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
   position: relative;
 }
 
@@ -107,14 +102,15 @@
   width: 70vw;
   position: absolute;
   top: 10vh;
+  left: 15vw;
   font-size: 0.7rem;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.9);
   padding: 4vh;
   color: #10110e;
-  font-size: 0.8rem;
   font-family: "Roboto", sans-serif;
   -webkit-box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
           box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
+  border: 1px solid rgba(16, 17, 14, 0.05);
 }
 
 #about .about_me_text .about_icons {
@@ -145,9 +141,13 @@
   padding-top: 10vh;
 }
 
+#work .work_container .projects_list {
+  width: 90vw;
+}
+
 #work .work_container .projects_list .project_section {
-  padding: 2rem;
   margin: 2rem;
+  padding: 2rem;
   background-color: white;
   border: 1px solid rgba(16, 17, 14, 0.05);
   border-radius: 5px;
