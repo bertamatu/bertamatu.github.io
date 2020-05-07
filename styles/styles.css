@@ -6,24 +6,25 @@
 }
 
 #home .home_navbar {
-  background-color: white !important;
+  background-color: rgba(255, 255, 255, 0.9) !important;
   font-family: sans-serif;
   font-weight: 100;
   font-size: 0.9rem;
   text-align: center;
-  padding: 3vh;
+  padding: 2vh;
 }
 
-#home .home_navbar .navbar-nav .nav-item, #home .home_navbar .navbar-nav span {
+#home .home_navbar .navbar-nav .nav-item,
+#home .home_navbar .navbar-nav span {
   color: #10110e !important;
-  padding-left: 3vw;
+  padding-left: 1vw;
 }
 
 #home .home_logo {
   z-index: 999;
   font-family: "Montserrat";
   text-align: center;
-  color: #FFF;
+  color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -51,26 +52,20 @@
   -webkit-background-clip: text;
   text-transform: uppercase;
   font-size: 120px;
-  line-height: .75;
+  line-height: 0.75;
   margin: 10px 0;
+  padding-left: 1vh;
 }
 
-#home .home_logo div {
-  width: 380px;
-  height: 2px;
-  background-color: rgba(254, 123, 115, 0.7);
-}
-
-.logo {
-  font-size: 2rem;
-  letter-spacing: 3px;
-  font-family: 'Libre Barcode 128 Text', cursive !important;
-  background: -webkit-linear-gradient(#10110e, #6cc2c3);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  opacity: 0.4;
-  margin: 4vh 0;
+#home .home_logo .intro_text {
+  line-height: 1rem;
+  color: rgba(108, 194, 195, 0.7);
+  font-family: sans-serif;
+  font-weight: 100;
+  letter-spacing: 8px;
+  font-size: 0.7rem;
+  margin-top: 1vh;
+  padding-left: 1vw;
 }
 
 #about {
@@ -128,50 +123,80 @@
   color: #10110e;
 }
 
-#work .projects_list {
+#work .work_container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding-top: 10vh;
 }
 
-#work .projects_list div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 10vw;
+#work .work_container .project_section {
+  height: 20vh;
+  width: 30vw;
+  margin: 5vh 2vw;
   background-color: rgba(33, 139, 155, 0.071);
-  margin-bottom: 20px;
-  margin-left: 15vw;
-  font-size: 0.8rem;
-  padding: 2rem;
   -webkit-box-shadow: 10px 10px 9px -2px rgba(0, 0, 0, 0.1);
   box-shadow: 10px 10px 9px -2px rgba(0, 0, 0, 0.1);
-}
-
-#work .projects_list div a {
-  font-size: 0.9rem;
-  padding: 1rem;
-  text-decoration: none;
-  font-size: 2rem;
-}
-
-#work .projects_list div .fab {
-  color: #215e6e;
 }
 
 #contact {
   height: 100vh;
   width: 100vw;
-  background-attachment: white;
+  background-image: url(/imgs/black_leaves.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+#contact .contacts_container {
+  background-color: white;
+  -webkit-box-shadow: 0px 10px 10px -2px rgba(0, 0, 0, 0.09);
+  box-shadow: 0px 10px 10px -2px rgba(0, 0, 0, 0.09);
+  padding-top: 15vh;
+  padding-bottom: 5vh;
+  text-align: center;
+}
+
+#contact .contacts_container .contacts_image {
+  height: 300px;
+  -webkit-transform: rotate(20deg);
+          transform: rotate(20deg);
+  border-radius: 50%;
+  animation: spin 10s infinite alternate-reverse;
+}
+
+#contact .contacts_container .fab,
+#contact .contacts_container .fas {
+  font-size: 4rem;
+  color: rgba(16, 17, 14, 0.9);
+  padding: 0 10px;
+  text-align: center;
+}
+
+#contact .contacts_container .location_text {
+  font-size: 0.6rem;
+  font-weight: 100;
+  margin: 0;
+  padding: 2vh;
+  text-align: center;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(20deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(20deg);
+  }
 }
 
 * {

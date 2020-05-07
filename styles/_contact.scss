@@ -1,55 +1,46 @@
-#contact  {
-    @include elementsHeightWidth (100vh, 100vw);
-    background-attachment: white;
+#contact {
+  @include elementsHeightWidth(100vh, 100vw);
+  @include bckgFullScreen (url(/imgs/black_leaves.jpeg));
+
+  .contacts_container {
+      background-color: rgba($color: $color3, $alpha: 1);
 
 
-// #footer_icons_container {
-//         height: 20vh;
-//         width: 20vh;
-//         margin: 0 auto;
-//         text-align: center;         
-//         position: absolute;
-//         top: 50%;
-//         left: 50%;
-//         font-size: 10rem;
-//         transform: rotate(25deg);
-//         top: (20vh);
-//         .fab {
-//             color: rgb(0, 0, 0);
-//             text-shadow: -2px -1px #ff0000;
-//         }:hover {
-//             letter-spacing: 2px;
-//             transform: rotate(10deg);
-//             transition: ease-out 0.2s;
-//             color: rgb(0, 229, 255);
-//             // background-color: rgba(214, 60, 60, 0.112); /* Dark grey background on mouse-over */
-//         }
-//         .icon_container {
-//             height: 150px;
-//             width: 150px;
-//             margin: 0;
-//             padding: 0;
-//         }
-//     }
-//     .footer_text {
-//     color: rgb(0, 0, 0);
-//     position: absolute;
-//     bottom: 0;
-//     vertical-align: center;
-//     font-size: 0.5rem;
-//     padding-bottom: 2vh;
-// }
+    -webkit-box-shadow: 0px 10px 10px -2px rgba(0,0,0,0.09);
+    -moz-box-shadow: 0px 10px 10px -2px rgba(0,0,0,0.09);
+    box-shadow: 0px 10px 10px -2px rgba(0,0,0,0.09);          
 
-    // #gmap_canvas {
-    //     margin: 0;
-    //     border: none;
-    //     outline: none;
-    //     filter: grayscale(100%);
-    //     height: 100vh;
-    //     width: 100vw;
-    //     opacity: 0.4;
-
-    // }
-
-
+    padding-top: 15vh;
+    padding-bottom: 5vh;
+    text-align: center;
+    .contacts_image {
+      height: 300px;
+      transform: rotate(20deg);
+      border-radius: 50%;
+      animation: spin 10s infinite alternate-reverse;
+    }
+    .fab,
+    .fas {
+      font-size: 4rem;
+      color: rgba($color: $color2, $alpha: 0.9);
+    //   @include textGradient($color3, $color2);
+      padding: 0 10px;
+      text-align: center;
+    }
+    .location_text {
+      font-size: 0.6rem;
+      font-weight: 100;
+      margin: 0;
+      padding: 2vh;
+      text-align: center;
+    }
+  }
+}
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(20deg);
+  }
 }

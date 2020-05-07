@@ -1,75 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" 
-          content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BERTA | MATU</title>
-    <link rel="stylesheet"
-          href="./styles/normalize.css">
-    <link rel="stylesheet"
-          href="./styles/styles.css">
-    <link rel="stylesheet" 
-          href="https://pro.fontawesome.com/releases/v5.12.0/css/all.css">
-    <link href="https://fonts.googleapis.com/css2?family=Arizonia&family=Cutive+Mono&family=Roboto:wght@100&display=swap" 
-          rel="stylesheet">
-    <link rel="stylesheet" 
-          href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
-          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
-          crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.12.0/css/all.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arizonia&family=Cutive+Mono&family=Roboto:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
 
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Barcode+128+Text&display=swap"
+      rel="stylesheet"
+    />
 
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Barcode+128+Text&display=swap" rel="stylesheet">
-    
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-161952248-1"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-161952248-1"
+    ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'UA-161952248-1');
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "UA-161952248-1");
     </script>
-</head>
-<body>
+  </head>
+  <body>
+    <header id="home">
+      <!-- ---------------------------------------- NAVIGATION ---------------------------------------- -->
+      <nav
+        class="home_navbar navbar navbar-expand-xl navbar-light bg-light fixed-top"
+      >
+        <a class="navbar-brand" href="#home"></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="fas fa-ellipsis-h"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link" href="#home">Home</a>
+            <a class="nav-item nav-link" href="#about">About</a>
+            <a class="nav-item nav-link" href="#work">Work</a>
+            <a class="nav-item nav-link" href="#contact">Contact</a>
+          </div>
+        </div>
+      </nav>
 
-  
-  <header id="home">
-  <!-- ---------------------------------------- NAVIGATION ---------------------------------------- -->
-	<nav class="home_navbar navbar navbar-expand-xl navbar-light bg-light fixed-top">
-		<a class="navbar-brand" 
-		   href="#home"></a>
-		<button class="navbar-toggler" 
-				type="button" 
-				data-toggle="collapse" 
-				data-target="#navbarNavAltMarkup" 
-				aria-controls="navbarNavAltMarkup" 
-				aria-expanded="false" 
-				aria-label="Toggle navigation">
-			<span class="fas fa-ellipsis-h"></span>
-		</button>
-		<div class="collapse navbar-collapse" 
-			 id="navbarNavAltMarkup">
-			<div class="navbar-nav">
-				<a class="nav-item nav-link" href="#home">Home</a>
-				<a class="nav-item nav-link" href="#about">About</a>
-				<a class="nav-item nav-link" href="#work">Work</a>
-				<a class="nav-item nav-link" href="#contact">Contact</a>
-			</div>
-		</div>
-	</nav>
+      <div class="home_logo">
+        <h1>BERTA<br /><span>MATU</span></h1>
+        <!-- <div></div> -->
+        <div class="intro_text">
+          creative front-end developer
+        </div>
+        <!-- <a id="home_projects_button" href="#work">SEE MY PROJECTS</a> -->
+      </div>
 
-    <div class="home_logo">
-			<h1>BERTA<br/>MATU</h1>
-			<div></div>
-
-	</div>
-	
-    <div>
-		<a id="home_projects_button" href="#work">SEE MY PROJECTS</a>
-    </div>
-
-
-    <!-- <article> -->
+      <!-- <article> -->
       <!-- <header class="intro_text">
         <p class="intro_description">
           <span> Hello! I'm <b class="intro_text_name">BERTA</b>!</span>
@@ -82,168 +90,165 @@
         </p>
         <a class="projects_button" href="#work">SEE MY PROJECTS</a>
       </header> -->
-    <!-- </article> -->
-    <!-- <div class="img_container">   -->
+      <!-- </article> -->
+      <!-- <div class="img_container">   -->
       <!-- <img src="https://media.giphy.com/media/26AHvcW0LBkohdWJa/giphy.gif" alt=""> -->
-    <!-- <div class="intro_triangle"></div>
+      <!-- <div class="intro_triangle"></div>
 	<p class="logo">BERTAMATU</p> -->
-	
+    </header>
 
-  </header>
-  
+    <!-- ---------------------------------------- ABOUT ---------------------------------------- -->
+    <section id="about">
+      <div class="intro_triangle"></div>
 
+      <div class="about_color_layer"></div>
 
+      <article class="about_me_text">
+        <div class="about_icons">
+          <span class="fab fa-html5 fa-2x"></span>
+          <span class="fab fa-css3-alt fa-2x"></span>
+          <span class="fab fa-sass fa-2x"></span>
+          <span class="fab fa-bootstrap fa-2x"></span>
+          <span class="fab fa-js-square fa-2x"></span>
+          <span class="fab fa-react fa-3x"></span>
+          <span class="fas fa-database fa-2x"></span>
+        </div>
+        <hr />
+        <p>
+          🔺 <b>SKILLS CAN BE TAUGHT, BUT ATTITUDE CAN'T!</b><br />
+          • Energetic, flexible, highly motivated, positive team player;<br />
+          • Eager to learn and open to new challenges;<br />
+          • Having the potential to motivate and support others;<br />
+        </p>
+        <hr />
+        <p>
+          I'm switching my career from finance and accounting to IT development.
+        </p>
+        <hr />
+        <p>
+          🔺 If you're looking for a team player who would be willing to learn a
+          new programming language to fulfill your companies or team's needs,
+          then you should contact me.<br />
+          🔺 Offers related to the internship are highly welcome too!
+        </p>
+      </article>
 
+      <div class="intro_geometric_shape"></div>
+      <!-- <img src="https://media.giphy.com/media/l3fQsvbfwo3rJcmwo/giphy.gif" alt=""> -->
+    </section>
+    <!-- ---------------------------------------- WORK ---------------------------------------- -->
+    <section id="work">
+      <div class="work_container">
+        <div class="projects_list">
+          <div class="project_section">
+            <a
+              href="https://github.com/bertamatu/movie-react-app"
+              id="react_project"
+              class="fab fa-react fa-2x"
+              target="_blank"
+            >
+              REACT.js MOVIE SEARCH WEB APP
+            </a>
+            <hr />
+            <p>
+              • API; <br />
+              • Search suggestions; <br />
+              • Search activates after the third symbol inserted;<br />
+              • The maximum number of dynamic search results to display is 8
+              movie listings.
+              <!-- debounce, error handling and loading -->
+            </p>
+          </div>
+          <div class="project_section">
+            <a
+              href="https://github.com/bertamatu/springCrudApp"
+              id="java_project"
+              class="fab fa-java fa-2x"
+              target="_blank"
+            >
+              SPRING BOOT CRUD WEB APP
+            </a>
+            <hr />
+            <p>
+              • Spring Boot • MySQL database • Thymeleaf <br />
+              • Connection to MySQL database; <br />
+              • Data in the database can be edited, inserted and deleted;
+            </p>
+          </div>
+        </div>
 
+        <div>
+          <div class="project_section">
+            <div>
+              <a
+                href="https://github.com/bertamatu/FCC_projects"
+                id="fcc_projects"
+                class=""
+                target="_blank"
+              >
+                freecodecamp.org projects
+              </a>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.
+              </p>
+            </div>
+          </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- ---------------------------------------- ABOUT ---------------------------------------- -->
-<section id="about">
-	<div class="intro_triangle"></div>
-
-  <div class="about_color_layer"></div>
-
-  
-  <article class="about_me_text">
-      <div class="about_icons">
-        <span class="fab fa-html5 fa-2x"></span>
-        <span class="fab fa-css3-alt fa-2x"></span>
-        <span class="fab fa-sass fa-2x"></span>
-        <span class="fab fa-bootstrap fa-2x"></span>
-        <span class="fab fa-js-square fa-2x"></span>
-        <span class="fab fa-react fa-3x"></span>
-        <span class="fas fa-database fa-2x"></span>
+          <div class="project_section"></div>
+        </div>
       </div>
-        <hr>
-      <p>
-        🔺 <b>SKILLS CAN BE TAUGHT, BUT ATTITUDE CAN'T!</b><br>
-        • Energetic, flexible, highly motivated, positive team player;<br>
-        • Eager to learn and open to new challenges;<br>
-        • Having the potential to motivate and support others;<br>
-      </p>
-      <hr>
-      <p>
-        I'm switching my career from finance and accounting to IT development.
-      </p>
-      <hr>
-      <p>
-        🔺 If you're looking for a team player who would be willing to learn a new programming language to fulfill your companies or team's needs, then you should contact me.<br>
-        🔺 Offers related to the internship are highly welcome too!
-      </p>
-  </article>
+    </section>
+    <!-- ---------------------------------------- CONTACT ---------------------------------------- -->
+    <footer id="contact">
+      <div class="contacts_container">
+        <img
+          class="contacts_image"
+          src="https://media.giphy.com/media/l3fQcLOqYbN8A6KLm/giphy.gif"
+          alt=""
+        />
+        <div>
+          <a
+            class="fab fa-linkedin"
+            href="https://www.linkedin.com/in/bertam/"
+            target="_blank"
+          >
+          </a>
+          <a
+            class="fab fa-github-square"
+            href="https://github.com/bertamatu"
+            target="_blank"
+          >
+          </a>
+          <a href="mailto:info.berta@gmail.com">
+            <i class="fas fa-envelope-square"></i>
+          </a>
+          <a href="tel:+37062612836">
+            <i class="fas fa-phone-square-alt"></i>
+          </a>
+		  <p class="location_text">KAUNAS • LITHUANIA • EUROPE</p>
+		  <br/>
+		  <span class="location_text">© 2020</span>
+        </div>
+      </div>
+    </footer>
 
-
-
-<div class="intro_geometric_shape"> </div>
-
-
-
-</section>
-<!-- ---------------------------------------- PROJECTS ---------------------------------------- -->
-<section id="work">
-  <div class="projects_list">
-    <div>
-      <a href="https://github.com/bertamatu/movie-react-app"
-         id="react_project"
-         class="fab fa-react fa-2x"
-         target="_blank">
-         REACT.js MOVIE SEARCH WEB APP
-      </a>
-      <hr>
-      <p>
-        • API; <br>
-        • Search suggestions; <br>
-        • Search activates after the third symbol inserted;<br>
-        • The maximum number of dynamic search results to display is 8 movie listings.
-        <!-- debounce, error handling and loading -->
-      </p>
-    </div>
-
-    <div>
-      <a href="https://github.com/bertamatu/springCrudApp"
-         id="java_project"
-         class="fab fa-java fa-2x"
-         target="_blank">
-         SPRING BOOT CRUD WEB APP
-      </a>
-      <hr>
-      <p>
-        • Spring Boot • MySQL database • Thymeleaf  <br>
-        • Connection to MySQL database; <br>
-        • Data in the database can be edited, inserted and deleted;
-      </p>
-    </div>
-
-    <!-- <div>
-      <a href="https://github.com/bertamatu/FCC_projects"
-         id="fcc_projects"
-         class=""
-         target="_blank">
-         freecodecamp.org projects
-      </a>
-      <p>
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-      </p>
-    </div> -->
-
-  </div>
-</section>
-<!-- ---------------------------------------- CONTACT ---------------------------------------- -->
-<footer id="contact">
-
-  <!-- <div id="footer_icons_container">
-
-    <div class="icon_container" >
-      <a class="fab fa-linkedin" 
-      href="https://www.linkedin.com/in/bertam/"
-      target="_blank">
-      </a>
-    </div>
-
-    <div class="icon_container">
-      <a class="fab fa-github-square"
-      href="https://github.com/bertamatu"
-      target="_blank">
-      </a>
-    </div>
-    
-  </div> -->
-
-        <!-- <iframe id="gmap_canvas"
-				src="https://maps.google.com/maps?q=Kaunas&t=&z=3&ie=UTF8&iwloc=&output=embed">
-		</iframe> -->
-                
-
-</footer>
-<!-- ---------------------------------------- SCRIPTS ---------------------------------------- -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" 
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" 
-        crossorigin="anonymous">
-</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" 
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" 
-        crossorigin="anonymous">
-</script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" 
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" 
-        crossorigin="anonymous">
-</script>
-<script src="./script.js">
-</script>
-</body>
+    <!-- ---------------------------------------- SCRIPTS ---------------------------------------- -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./script.js"></script>
+  </body>
 </html>
