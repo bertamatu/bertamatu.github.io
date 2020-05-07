@@ -76,11 +76,6 @@
 #about {
   height: 100vh;
   width: 100vw;
-  background-image: url(https://images.unsplash.com/photo-1566041510639-8d95a2490bfb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=652&q=80);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
   position: relative;
 }
 
@@ -129,11 +124,6 @@
 #work {
   height: 100vh;
   width: 100vw;
-  background-image: url(https://images.unsplash.com/photo-1524230572899-a752b3835840?ixlib=rb-1.2.1&auto=format&fit=crop&w=976&q=80);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
   position: relative;
   color: #10110e;
 }
