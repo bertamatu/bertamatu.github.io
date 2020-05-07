@@ -1,35 +1,43 @@
-@mixin elementsHeightWidth ($height, $width) {
-    height: $height;
-    width: $width;
-}
-@mixin bckgFullScreen ($url) {
-    background-image: $url;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
+@mixin elementsHeightWidth($height, $width) {
+  height: $height;
+  width: $width;
 }
 
-@mixin textGradient ($color_top,  $color_bottom) {
-    background: -webkit-linear-gradient($color_top,  $color_bottom); 
-    background-clip: text;
-    -webkit-background-clip: text;  
-    -webkit-text-fill-color: transparent;  
+@mixin bckgFullScreen($url) {
+  background-image: $url;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+@mixin BoxShadowDown {
+    box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
 }
 
-
+@mixin textGradient($color_top, $color_bottom) {
+  background: -webkit-linear-gradient($color_top, $color_bottom);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 
 
 
 
 @mixin bottomShadow {
-    -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
-    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
 }
 @mixin topBottomShadow {
-    -webkit-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.15);
-    -moz-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.15);
-    box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.15);
+  -webkit-box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.15);
 }

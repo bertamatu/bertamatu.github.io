@@ -1,14 +1,13 @@
 #contact {
   @include elementsHeightWidth(100vh, 100vw);
-  @include bckgFullScreen (url(/imgs/black_leaves.jpeg));
+  @include bckgFullScreen(url(/imgs/black_leaves.jpeg));
 
   .contacts_container {
-      background-color: rgba($color: $color3, $alpha: 1);
+    background-color: rgba($color: $color3, $alpha: 1);
 
-
-    -webkit-box-shadow: 0px 10px 10px -2px rgba(0,0,0,0.09);
-    -moz-box-shadow: 0px 10px 10px -2px rgba(0,0,0,0.09);
-    box-shadow: 0px 10px 10px -2px rgba(0,0,0,0.09);          
+    -webkit-box-shadow: 0px 10px 10px -2px rgba(0, 0, 0, 0.09);
+    -moz-box-shadow: 0px 10px 10px -2px rgba(0, 0, 0, 0.09);
+    box-shadow: 0px 10px 10px -2px rgba(0, 0, 0, 0.09);
 
     padding-top: 15vh;
     padding-bottom: 5vh;
@@ -23,7 +22,7 @@
     .fas {
       font-size: 4rem;
       color: rgba($color: $color2, $alpha: 0.9);
-    //   @include textGradient($color3, $color2);
+      //   @include textGradient($color3, $color2);
       padding: 0 10px;
       text-align: center;
     }

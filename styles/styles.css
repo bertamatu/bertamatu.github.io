@@ -20,6 +20,14 @@
   padding-left: 1vw;
 }
 
+#home .home_navbar .navbar-nav :hover {
+  color: #6cc2c3 !important;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+  text-decoration: line-through;
+  text-shadow: 0px 1px rgba(16, 17, 14, 0.2);
+}
+
 #home .home_logo {
   z-index: 999;
   font-family: "Montserrat";
@@ -71,6 +79,16 @@
 #about {
   height: 100vh;
   width: 100vw;
+  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#a8edea), to(#fed6e3));
+  background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#d5dee7), color-stop(0%, #ffafbd), to(#c9ffbf));
+  background-image: linear-gradient(to top, #d5dee7 0%, #ffafbd 0%, #c9ffbf 100%);
+  background-image: linear-gradient(-225deg, #FFFEFF 0%, #D7FFFE 100%);
+  background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
+  background-image: linear-gradient(-225deg, #B7F8DB 0%, #50A7C2 100%);
+  background-image: linear-gradient(315deg, #feae96 0%, #fe0944 74%);
+  background-image: linear-gradient(315deg, #08AEEA 0%, #2AF598 53%, #ffffff 100%);
   position: relative;
 }
 
@@ -94,16 +112,17 @@
   padding: 4vh;
   color: #10110e;
   font-size: 0.8rem;
-  font-family: 'Roboto', sans-serif;
-  -webkit-box-shadow: 10px 10px 9px -2px rgba(0, 0, 0, 0.1);
-  box-shadow: 10px 10px 9px -2px rgba(0, 0, 0, 0.1);
+  font-family: "Roboto", sans-serif;
+  -webkit-box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
+          box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
 }
 
 #about .about_me_text .about_icons {
   text-align: center;
 }
 
-#about .about_me_text .about_icons .fab, #about .about_me_text .about_icons .fas {
+#about .about_me_text .about_icons .fab,
+#about .about_me_text .about_icons .fas {
   background: -webkit-linear-gradient(white, #6cc2c3);
   background-clip: text;
   -webkit-background-clip: text;
@@ -120,22 +139,57 @@
   height: 100vh;
   width: 100vw;
   position: relative;
-  color: #10110e;
 }
 
 #work .work_container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  padding-top: 10vh;
 }
 
-#work .work_container .project_section {
-  height: 20vh;
-  width: 30vw;
-  margin: 5vh 2vw;
-  background-color: rgba(33, 139, 155, 0.071);
+#work .work_container .projects_list .project_section {
+  padding: 2rem;
+  margin: 2rem;
+  background-color: white;
+  border: 1px solid rgba(16, 17, 14, 0.05);
+  border-radius: 5px;
   -webkit-box-shadow: 10px 10px 9px -2px rgba(0, 0, 0, 0.1);
   box-shadow: 10px 10px 9px -2px rgba(0, 0, 0, 0.1);
+}
+
+#work .work_container .projects_list .project_section a {
+  color: rgba(16, 17, 14, 0.8);
+  font-size: 0.7rem;
+  font-weight: 100;
+}
+
+#work .work_container .projects_list .project_section p {
+  font-size: 0.7rem;
+  font-weight: 100;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+}
+
+#work .work_container .projects_list .project_section .fa-github {
+  font-size: 2rem;
+  padding-right: 3vw;
+  text-decoration: none;
+  background: -webkit-linear-gradient(white, #10110e);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#work .work_container .projects_list .project_section .fab {
+  margin-right: 3vw;
+}
+
+#work .work_image {
+  height: 100px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-right: 8vw;
+  margin-bottom: 1vh;
 }
 
 #contact {

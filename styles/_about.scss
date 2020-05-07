@@ -1,56 +1,57 @@
 #about {
-    @include elementsHeightWidth (100vh, 100vw);
-    // @include bckgFullScreen (url( https://images.unsplash.com/photo-1566041510639-8d95a2490bfb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=652&q=80));
-   
-    // @include bckgFullScreen (url(https://media.giphy.com/media/gw3MROIiJp44tg0E/giphy.gif));
+  @include elementsHeightWidth(100vh, 100vw);
+  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+  background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+  background-image: linear-gradient(to top, #d5dee7 0%, #ffafbd 0%, #c9ffbf 100%);
+  background-image: linear-gradient(-225deg, #FFFEFF 0%, #D7FFFE 100%);
+  background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
+  background-image: linear-gradient(-225deg, #B7F8DB 0%, #50A7C2 100%);
+  background-image: linear-gradient(315deg, #feae96 0%, #fe0944 74%);
+  background-image: linear-gradient(315deg, #08AEEA 0%, #2AF598 53%, #ffffff 100%);
 
-    // @include bckgFullScreen (url(https://media.giphy.com/media/3o6gaPHZetq8kDhP7q/giphy.gif));
 
 
+  position: relative;
 
-    position: relative;
+  .intro_triangle {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0vh 0vh 50vh 100vw;
 
-    .intro_triangle {
-                    width: 0;
-                    height: 0;
-                    border-style: solid;
-                    border-width: 0vh 0vh 50vh 100vw;
-                    border-color:  transparent transparent transparent rgba($color: $color3, $alpha: 1);
-                    line-height: 0px;                     
+    // background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+
+    border-color: transparent transparent transparent
+      rgba($color: $color3, $alpha: 1);
+    line-height: 0px;
+  }
+
+  .about_me_text {
+    text-align: justify;
+    border-radius: 5px;
+    width: 70vw;
+    position: absolute;
+    top: 10vh;
+    font-size: 0.7rem;
+    background-color: rgba($color: $color3, $alpha: 0.2);
+    padding: 4vh;
+    color: rgba($color: $color2, $alpha: 1);
+    font-size: 0.8rem;
+    font-family: "Roboto", sans-serif;
+    @include BoxShadowDown;
+
+
+    .about_icons {
+      text-align: center;
+      .fab,
+      .fas {
+        @include textGradient($color3, $color4);
+        font-size: 1.5rem;
+        padding: 2vh 0.5vw;
+      }
     }
-
-        .about_me_text {
-            text-align: justify;
-            border-radius: 5px;
-            width: 70vw;
-            position: absolute;
-            top: 10vh;
-            font-size: 0.7rem;
-            background-color: rgba($color: $color3, $alpha: 0.2);
-            padding: 4vh;
-            color: rgba($color: $color2, $alpha: 1);
-            font-size: 0.8rem;
-            font-family: 'Roboto', sans-serif;
-
-            -webkit-box-shadow: 10px 10px 9px -2px rgba(0,0,0,0.1);
-            -moz-box-shadow: 10px 10px 9px -2px rgba(0,0,0,0.1);
-            box-shadow: 10px 10px 9px -2px rgba(0,0,0,0.1);           
-
-
-
-
-
-            .about_icons {
-                    text-align: center;
-                        .fab, .fas {
-                            @include textGradient($color3, $color4);
-                            font-size: 1.5rem;
-                            padding: 2vh 0.5vw;
-                        }
-            }
-            hr {
-                background-color: rgba($color: $color3, $alpha: 1);
-            }
-        } 
+    hr {
+      background-color: rgba($color: $color3, $alpha: 1);
     }
-
+  }
+}
