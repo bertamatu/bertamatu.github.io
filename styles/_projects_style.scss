@@ -8,7 +8,7 @@
 }
 .project_container {
   border-radius: 5px;
-  border: 1px solid rgba($color: $color2, $alpha: 0.15);
+  border: 1px solid rgba($color: $color2, $alpha: 0.05);
   display: flex;
   flex-direction: column;
   width: 80vw;
@@ -17,27 +17,36 @@
   margin-left: 10%;
   margin-top: 10vh;
   .project_section {
-    .project_title {
-      color: rgba($color: $color2, $alpha: 0.9);
-      font-weight: bold;
+    padding-top: 3rem;
+    height: 60vh;
+    width: 60vw;
+    margin-bottom: 5vh;
+    margin-left: 10vw;
+    header {
+      display: flex;
+      flex-direction: row;
     }
+    .github_icon {
+      color: rgba($color: $color4, $alpha: 0.9);
+      font-size: 1.2rem;
+      text-decoration: none;
+      padding-right: 2vw;
+      padding-bottom: 3vh;
+    } 
     hr {
       height: 1px;
     }
     .project_description {
       line-height: 1.5;
+      margin-top: 3vh;
     }
-    height: 60vh;
-    width: 60vw;
-    margin-bottom: 5vh;
-    margin-left: 10vw;
-    justify-content: center;
-    align-items: center;
+    
   }
   .project_image_section {
     text-align: center;
+    color: $color1;
+    font-weight: bold;
     padding: 0;
     margin: 0;
   }
-
 }
