@@ -1,0 +1,43 @@
+#close_button {
+  color: rgba($color: $color2, $alpha: 0.9);
+  font-size: 2rem;
+  position: absolute;
+  top: 3vh;
+  right: 5vw;
+  text-decoration: none;
+}
+.project_container {
+  border-radius: 5px;
+  border: 1px solid rgba($color: $color2, $alpha: 0.15);
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+  height: 75vh;
+  @include BoxShadowDown;
+  margin-left: 10%;
+  margin-top: 10vh;
+  .project_section {
+    .project_title {
+      color: rgba($color: $color2, $alpha: 0.9);
+      font-weight: bold;
+    }
+    hr {
+      height: 1px;
+    }
+    .project_description {
+      line-height: 1.5;
+    }
+    height: 60vh;
+    width: 60vw;
+    margin-bottom: 5vh;
+    margin-left: 10vw;
+    justify-content: center;
+    align-items: center;
+  }
+  .project_image_section {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+
+}

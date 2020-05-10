@@ -10,6 +10,9 @@
     font-size: 1rem;
     text-align: center;
     padding: 2vh;
+    .navbar-brand {
+      color: white;
+    }
     .navbar-nav {
       // a {
         
@@ -40,6 +43,7 @@
     letter-spacing: 1px;
     h1 {
       background-image: url(/imgs/giphy_logo.webp);
+      // background-image: url(https://media.giphy.com/media/lPHrJvdUC7ffW/giphy.gif);
       background-size: cover;
       background-position: center;
       color: transparent;

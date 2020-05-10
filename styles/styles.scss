@@ -4,17 +4,21 @@
 @import './about';
 @import './work';
 @import './contact';
+@import './projects_style';
+
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     max-width: 100%;
+    font-display: swap;
     }
 
 body {
     color: $mainTextColor;
     font-family: 'Roboto', sans-serif;
+    font-size: 12px;
     }
 
 // font-family: 'Roboto', sans-serif;

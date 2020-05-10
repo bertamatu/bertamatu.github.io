@@ -14,6 +14,10 @@
   padding: 2vh;
 }
 
+#home .home_navbar .navbar-brand {
+  color: white;
+}
+
 #home .home_navbar .navbar-nav .nav-item,
 #home .home_navbar .navbar-nav span {
   color: #10110e !important;
@@ -253,16 +257,77 @@
   }
 }
 
+#close_button {
+  color: rgba(16, 17, 14, 0.9);
+  font-size: 2rem;
+  position: absolute;
+  top: 3vh;
+  right: 5vw;
+  text-decoration: none;
+}
+
+.project_container {
+  border-radius: 5px;
+  border: 1px solid rgba(16, 17, 14, 0.15);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 80vw;
+  height: 75vh;
+  -webkit-box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
+          box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
+  margin-left: 10%;
+  margin-top: 10vh;
+}
+
+.project_container .project_section {
+  height: 60vh;
+  width: 60vw;
+  margin-bottom: 5vh;
+  margin-left: 10vw;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.project_container .project_section .project_title {
+  color: rgba(16, 17, 14, 0.9);
+  font-weight: bold;
+}
+
+.project_container .project_section hr {
+  height: 1px;
+}
+
+.project_container .project_section .project_description {
+  line-height: 1.5;
+}
+
+.project_container .project_image_section {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   max-width: 100%;
+  font-display: swap;
 }
 
 body {
   color: rgba(0, 0, 0, 0.9);
   font-family: 'Roboto', sans-serif;
+  font-size: 12px;
 }
 /*# sourceMappingURL=styles.css.map */
