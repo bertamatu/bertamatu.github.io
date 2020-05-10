@@ -1,61 +1,46 @@
 #work {
-    @include elementsHeightWidth (100vh, 100vw);
-    // @include bckgFullScreen (url(https://images.unsplash.com/photo-1524230572899-a752b3835840?ixlib=rb-1.2.1&auto=format&fit=crop&w=976&q=80));
-    position: relative;
-
-    .work_container {
-        padding-top: 10vh;
-
-
-
-        .projects_list {
-            width: 90vw;
-
-
-            .project_section {
-                margin: 2rem;
-                padding: 2rem;
-                background-color: rgba($color: $color3, $alpha: 1);
-                border: 1px solid rgba($color: $color2, $alpha: 0.05);
-                border-radius: 5px;
-                -webkit-box-shadow: 10px 10px 9px -2px rgba(0,0,0,0.1);
-                -moz-box-shadow: 10px 10px 9px -2px rgba(0,0,0,0.1);
-                box-shadow: 10px 10px 9px -2px rgba(0,0,0,0.1);
-
-
-                a {
-                    color: rgba($color: $color2, $alpha: 0.8);
-                    font-size: 1rem;
-                    font-weight: 100;
-
-                }
-                p {
-                    font-size: 1rem;
-                    font-weight: 100;
-                    margin: 0;
-                    padding: 0;
-                    line-height: 1;
-                }
-                .fa-github {
-                    font-size: 2rem;
-                    padding-right: 3vw;
-                    text-decoration: none;
-                    @include textGradient($color3, $color2);
-                }
-                .fab {
-                    margin-right: 3vw;
-                }
-
-
+  @include elementsHeightWidth(100vh, 100vw);
+  // @include bckgFullScreen (url(https://images.unsplash.com/photo-1524230572899-a752b3835840?ixlib=rb-1.2.1&auto=format&fit=crop&w=976&q=80));
+  position: relative;
+  text-align: center;
+  .work_container {
+    padding-top: 20vh;
+    .projects_list {
+      width: 90vw;
+      padding: 5vw;
+      .project_section {
+        padding: 5vw 12vh;
+        background-color: rgba($color: $color3, $alpha: 1);
+        // border: 1px solid rgba($color: $color2, $alpha: 0.05);
+        border-radius: 5px;
+        background-color: rgba($color: $color4, $alpha: 0.1);
+        -webkit-box-shadow: 10px 10px 9px -2px rgba(0, 0, 0, 0.1);
+        -moz-box-shadow: 10px 10px 9px -2px rgba(0, 0, 0, 0.1);
+        box-shadow: 10px 10px 9px -2px rgba(0, 0, 0, 0.1);
+        a {
+          color: rgba($color: $color2, $alpha: 0.8);
+          font-size: 1rem;
+          font-weight: 100;
         }
+        p {
+          font-size: 1rem;
+          font-weight: 100;
+          margin: 0;
+          padding: 0;
+          line-height: 1;
+        }
+        .fa-info-circle {
+            color: rgba($color: $color1, $alpha: 0.7);
+        }
+      }
     }
-}
-    .work_image {
-        height: 100px;
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        margin-right: 8vw;
-        margin-bottom: 1vh;
-    }
+  }
+  .work_image {
+    height: 200px;
+    // position: absolute;
+    // bottom: 0;
+    // right: 0;
+    // margin-right: 8vw;
+    // margin-bottom: 1vh;
+  }
 }
